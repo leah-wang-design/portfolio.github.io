@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Moodie Music Player</title>
+    <link rel="stylesheet" href="musicplayer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./musicplayer.js"></script>
+    <link rel="icon" href="LOGO.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<div class="topbanner">
+    <div class="mylogo">
+        <img src="LOGO.png" alt="logo">
+    </div>
+    <nav class="nav">
+        <a href="index.html">WORK</a>
+        <a href="about-responsive.html">ABOUT</a>
+    </nav>
+</div>
+
+<header class="banner" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" data-aos-easing="ease-out">
+    <div class="projecttitle">
+        <h1>Moodie Music Player</h1>
+        <h4>A music app that allows you to listen to music by your mood, react to the music with mood and classify the songs into moods.</h4>
+    </div>
+    <div class="image">
+        <img src="music_iphone_mockup.png" alt="music player">
+    </div>
+</header>
+<div class="introduction">
+    <div class="box">
+        <div class="head">
+            <h3>Background</h3>
+        </div>
+        <div class="content">
+            <h4>I worked as a researcher and designer on designing this music app. The purpose of this project is meant to solve a real challenge I encounter in daily life in a creative way.</h4>
+        </div>
+        <div class="Challenge">
+            <h3>Challenge</h3>
+        </div>
+        <div class="hmw">
+            <h4>How might we enable users to quickly find music based on their needs, and organize the playlist in an intuitive way?</h4>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="title">
+            <h3>Role</h3>
+        </div>
+        <div class="sidebarcontent">
+            <h4>UX Designer, UI Designer</h4>
+        </div>
+        <div class="duration">
+            <h3>Duration</h3>
+        </div>
+        <div class="durationcontent">
+            <h4>1 month</h4>
+        </div>
+    </div>
+</div>
+
+<div class="animation">
+    <div class="homepagegif" data-aos="slide-right" data-aos-duration="1000" data-aos-easing="ease-out">
+        <img id="homepagegif" src="Musicplayer/Animation/mockup-principle-ae-ps.gif" alt="homepagegif">
+    </div>
+    <div class="description">
+        <div class="descriptiontitle" id="titletext1" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in">
+            <h4><img class="logo" style='display:inline;' src="Musicplayer/Diagram/logo.png" height=18px; alt="logo" padding-top="22%"> Moodie Homepage</h4>
+            <h1>Pick the song according to your choice of mood</h1>
+            <h5>Find music based on their needs in an intuitive way, through categorizing music based on daily moods.</h5>
+        </div>
+    </div>
+    <div class="description">
+        <div class="descriptiontitle" id="titletext2" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in">
+            <h4><img class="logo" style='display:inline;' src="Musicplayer/Diagram/logo.png" height=18px; alt="logo" padding-top="22%"> Moodie Music Player</h4>
+            <h1>React to the song based on your choice of mood</h1>
+            <h5>Quickly add songs to the playlist by reacting to the song. Interact with other users by checking out the comment sections. </h5>
+        </div>
+    </div>
+    <div class="playerpage">
+        <img src="Musicplayer/Animation/player-1.gif" id="image1" alt="player1">
+        <img src="Musicplayer/Animation/player-2.png" id="image2" alt="player2">
+        <img src="Musicplayer/Animation/player-3.png" id="image3" alt="player3">
+    </div>
+    <div class="mockuppng" data-aos="fade-in" data-aos-duration="2000" data-aos-easing="ease-out">
+        <img id="mockupimage" src="Musicplayer/Animation/iphone-x-mockup-scene@2x.png" alt="mockuppng">
+    </div>
+    <div class="description" data-aos="fade-in" data-aos-duration="2000" data-aos-easing="ease-out">
+        <div class="descriptiontitle" id="titletext3">
+            <h4><img class="logo" style='display:inline;' src="Musicplayer/Diagram/logo.png" height=18px; alt="logo" padding-top="22%"> Moodie My Music and Account</h4>
+            <h1>Find your customized playlists and mood records</h1>
+            <h5>Playlists have both the ones you created and "Mood list" that auto-generated from the reactions you made to the songs. </h5>
+        </div>
+    </div>
+</div>
+<div class="navigatiorbar">
+    <!-- <li class="hidebtn"> <ion-icon name="caret-back-outline"></ion-icon><br>HIDE</li> -->
+    <ol class="floatinglist" data-aos="fade-right">
+        <li class="btn" id="1">
+            <a href="#research">
+                <span class="dot"></span>&nbsp;&nbsp;Research
+            </a>
+        </li>
+        <li class="btn" id="2">
+            <a href="#Defineproblem"><span class="dot"></span>&nbsp;&nbsp;Define the Problem</a></li>
+        <li class="btn" id="3">
+            </span><a href="#Ideation"><span class="dot"></span>&nbsp;&nbsp;Ideation</a></li>
+        <li class="btn" id="4">
+            </span><a href="#Design"><span class="dot"></span>&nbsp;&nbsp;Design Iterations</a></li>
+        <li class="btn" id="5">
+            </span><a href="#FinalPrototype"><span class="dot"></span>&nbsp;&nbsp;Prototype</a></li>
+    </ol>
+</div>
+
+<div class="main">
+    <div class="mainbanner">
+        <h2>Process</h2>
+        <img src="Musicplayer/Diagram/0_process.png" alt="process">
+    </div>
+
+    <div class="mainprocess">
+        <div id="research">
+            <li>Research</li>
+            <h4>I began the process by interviewing friends on their experience with current music app they are using and painpoints they have. I went through the user interactions within the major music apps (spotify,apple music, youtube music, soundcloud)
+                to get a better understanding of the products.</h4>
+            <li class="subtitle">Competitive Study</li>
+            <h4>Music is an integral part of human life, but at the same time, that is not the sphere where people would like to make any additional efforts. Everything the user needs here is clear navigation and fast work. However, considering the number
+                of competitors in this market, it’s important to think about something original in design so that the service can stand out from the crowd. I did a competitive study for the major music players in the market, in order to get a sense of
+                what kind of functions exist and the potentials to explore out of music app.</h4>
+            <img src="Musicplayer/Diagram/0_musicapplogos.png" alt="competitivestudypng">
+            <h4>For music players like Spotify, Youtube Music, Apple Music, Amazon Prime Music and Tidal, though the general services they provide are all similar (includes Explore music, personalized recommendation, search music, add music to playlist, customize
+                playlist), they all have their own star features that help them stand out in the market, such as strong searching options, options to show lyrics, integration with youtube, integration with Alexa, and options to choose music quality and
+                find new songs based on music genres.</h4>
+            <li class="subtitle">Understand the Users</li>
+            <h4>In order to get a better understanding of the users, I interviewed 6 friends who used apple music, spotify and youtube music, as well as looked through comments in app store for the major music apps above, the main pain points are:</h4>
+            <img src="Musicplayer/Diagram/1_painpoints.png" alt="painpoints" data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in-back">
+        </div>
+        <div id="Defineproblem">
+            <li>Define the Problem</li>
+            <h4>After gathering and catergorizing the feedback I got from app store reviews and interviews, I created personas to conclude the challenges they are currently facing: <br></h4>
+            <div class="persona" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in">
+                <img id="persona" src="Musicplayer/Diagram/3_persona.png" alt="persona">
+            </div>
+            <h4>In order to solve the problem,</h4>
+            <h4><br></h4>
+            <li class="secondsubtitle">How might we help users find songs/playlist that match their needs easily?</li>
+            <li class="secondsubtitle">How might we help users to add songs and organize the playlist in a way, so they can find the song they want to listen to easily later?</li>
+        </div>
+        <div id="Ideation">
+            <li>Ideation</li>
+            <h4>By sketching mindmap, I started to brainstorm as many as ideas I can, and pick the solutions that are more innovative and potentials to be developed further.</h4>
+            <h4> During the process, I tried to come up with solutions that can accomplish the following tasks:</h4>
+            <img src="Musicplayer/Diagram/4_possible-solutions.png" alt="possible-solutions"><br>
+            <h4>I sketched different <a href="Musicplayer/Diagram/5_DifferentPagesSketchIterations.png">versions</a> for each interface, after self-critizing for the first round and getting feedback from friends, I was able to come to a cleaner and better-organized
+                version showing below.</h4>
+            <img id="balsmiq" src="Musicplayer/Diagram/6_Wireframebalsamiqsketch.png" alt="Wireframebalsamiqsketch">
+            <h4>One idea I came up with is using 'mood' to label the song and categorize the song to different playlists. In order to validate the idea, I conducted research on the major music apps, and found 'genre' and 'mood' currently are the most important
+                influencers when choosing music to listen to, yet the terms to define 'mood'and 'genre' are often mixed, sometimes can be ambiguous and misleading. As a starting point, I referred to the <a href="https://sites.tufts.edu/eeseniordesignhandbook/2015/music-mood-classification/">report</a>                Tufts University did to classify the music mood, and came up with 10 moods to label the music.</h4>
+            <img src="Musicplayer/Diagram/7_emoticons.png" alt="emoticons">
+            <h4>I also sketched different versions of logo for the app. The main idea is having a logo that tells people about the app's key feature 'integration of music and moods'. After showing different options to my friends and mentor, I narrowed down
+                the options to two, and combined them to a logo that has a vibe of a person listening to music and has a smile on its face.</h4>
+            <img src="Musicplayer/Diagram/8_LogoDesign.png" alt="LogoDesign">
+        </div>
+        <div id="Design">
+            <li>Design and Iterations</li>
+            <h4>By applying IOS design guide, I took one step further from the sketch version of wireframe to get to a high-fidelity wireframe. I conducted more usability tests with real users, and iterated different versions of necessary tabs and icon sizes.</h4>
+            <li class="subtitle">UI KIT</li>
+            <img src="Musicplayer/Diagram/9_UI-KIT.png" alt="9_UI-KIT" data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in-back">
+        </div>
+    </div>
+
+</div>
+
+<div class="highfidelity" data-aos="fade-up" data-aos-duration="400" data-aos-easing="ease-out">
+    <div class="hifitext">
+        <h3>High-Fidelity</h3>
+        <h4>In my first iterations, I tried to optimize the interactivity of the app by experimenting with different locations for the 'mood' choice bar, adjusting color contrast to better pop the 'mood' features, as well as maintaining a consistent use of
+            colors throughout each page of the app.
+    </div>
+    <div id="firstline" data-aos="fade-out" data-aos-duration="800" data-aos-easing="ease-out">
+        <img src="Musicplayer/High-fidelity/1_Homepage.png" alt="homepage">
+        <img src="Musicplayer/High-fidelity/2_Playerpage.png" alt="playerpage">
+        <img src="Musicplayer/High-fidelity/3_Comments.png" alt="playercomment">
+        <img src="Musicplayer/High-fidelity/4_Playlist.png" alt="Playlist">
+        <img src="Musicplayer/High-fidelity/5_Myaccount.png" alt="My Account">
+    </div>
+    <div id="secondline" data-aos="fade-out" data-aos-duration="800" data-aos-easing="ease-out">
+        <img src="Musicplayer/High-fidelity/6_Homepage-dark.png" alt="homepage">
+        <img src="Musicplayer/High-fidelity/7_Playerpage-dark.png" alt="playerpage">
+        <img src="Musicplayer/High-fidelity/8_Comments-dark.png" alt="playercomment">
+        <img src="Musicplayer/High-fidelity/9_Playlist-dark.png" alt="Playlist">
+        <img src="Musicplayer/High-fidelity/10_Myaccount-dark.png" alt="My Account">
+    </div>
+</div>
+
+<!-- </div> -->
+
+
+<div class="mainprocess">
+    <div id="FinalPrototype">
+        <li>Prototype and Testing</li>
+        <h4>I interviewed five users with this prototype and gained some valuable feedback. They thought the idea of discovering music based on emotion is fun and interesting. They love the fact that they can see the recommendations based on the mood they
+            choose. I also got some feedback on the comment section that they want to click on other users to see their playlists. I also built a prototype in Figma:</h4>
+        <br>
+        <br>
+        <br>
+        <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FjsqLSOlxdbGIrWqATfhntV%2FMoodie%3Fnode-id%3D203%253A3571%26viewport%3D127%252C411%252C0.09964364767074585%26scaling%3Dscale-down" allowfullscreen></iframe>
+        <br>
+        <br>
+        <br>
+        <h4>I truly enjoyed working on this project since the idea roots in my daily challenge. Solving a problem with a creative solution was fun, and I learned a lot during the problem solving process. If I had more time, I would have done more generative
+            research at the early stage and make more design iterations to make the app more engaging and fun.</h4>
+    </div>
+</div>
+
+<div class="bottomnav">
+    <div class="bottomnavcontent">
+        <h7>SALESCHAMP</h7>
+        <h6 style="text-decoration: underline;"><a href="Invoicefeature-responsive.html" id="bottomnavname">Invoice Feature Design</a></h6>
+    </div>
+    <div class="bottomnavcontent">
+        <h7>BROWARD PUBLIC SCHOOLS</h7>
+        <h6 style="text-decoration: underline;"><a href="onlineteaching.html">Online Teaching App Design</a></h6>
+    </div>
+
+</div>
+
+<div id="bottominfo">
+    <div>
+        <a href="https://www.linkedin.com/in/leah-fu-wang/"><img src="linkedin-in-brands.svg" id="linkedinpng"></a>&nbsp;
+        <a href="mailto:fw2286@columbia.edu"><img src="envelope-regular.svg" id="emailpng"></a>
+        <a href="https://www.linkedin.com/in/leah-fu-wang/"><img src="medium.svg" id="mediumpng"></a>&nbsp;
+        <br><br>
+    </div>
+    <div>
+        <h4>&copy; leah wang <span id="year">2021</span></h4>
+    </div>
+</div>
+<div class="loader-wrapper">
+    <svg class="tea" width='37' height='48' viewbox='0 0 37 48' fill='none' xmlns='http://www.w3.org/2000/svg'> 
+        <path d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z" stroke="var(--secondary)" stroke-width="2"></path>
+        <path d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34" stroke="var(--secondary)" stroke-width="2"></path>
+        <path id="teabag" fill="var(--secondary)" fill-rule="evenodd" clip-rule="evenodd" d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z"></path>
+        <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--secondary)"></path>
+        <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--secondary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+   
+   </svg>
+</div>
+
+</html>

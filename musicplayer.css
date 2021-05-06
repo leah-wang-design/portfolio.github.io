@@ -533,7 +533,7 @@ h7 {
 }
 
 #bottominfo {
-    height: 20px;
+    height: 28px;
     margin-top: 15%;
     text-align: center;
     position: relative;
@@ -544,7 +544,7 @@ h7 {
 /*this is for bottom info*/
 
 #bottominfo img {
-    height: 20px;
+    height: 28px;
     opacity: 1;
 }
 

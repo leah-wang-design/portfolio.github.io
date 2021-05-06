@@ -314,7 +314,7 @@ li {
 }
 
 #bottominfo {
-    height: 20px;
+    height: 28px;
     margin-top: 15%;
     text-align: center;
     position: relative;
@@ -322,7 +322,7 @@ li {
 }
 
 #bottominfo img {
-    height: 20px;
+    height: 28px;
     opacity: 1;
 }
 

@@ -243,15 +243,26 @@ li {
     text-align: left;
 }
 
+@media screen and (min-width: 1024px) {
+    .animation h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .animation h1 {
+        font-size: 36px;
+    }
+}
+
 .animation h1 {
-    color: white !important;
+    color: white;
     font-family: 'SF Pro', sans-serif;
-    font-size: 50px !important;
-    font-weight: 600 !important;
-    padding-top: 2% !important;
-    padding-right: 20% !important;
-    padding-left: 20% !important;
-    padding-left: 15% !important;
+    line-height: 1.2;
+    font-weight: 600;
+    padding-top: 2%;
+    padding-right: 20%;
+    padding-left: 20%;
 }
 
 .mainbanner {
@@ -269,13 +280,24 @@ li {
     max-width: 100%;
 }
 
+@media screen and (min-width: 1024px) {
+    .mainprocess {
+        padding-left: 28%;
+        padding-right: 28%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mainprocess {
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+}
+
 .mainprocess {
     font-family: 'Lato', sans-serif;
     color: #2F2F2F;
     align-content: center;
-    padding-left: 28%;
-    padding-right: 28%;
-    /* padding: 50px 20% 0px 20%; */
 }
 
 .subtitle {
@@ -296,19 +318,26 @@ li {
     padding-bottom: 36px;
 }
 
+@media screen and (min-width: 1024px) {
+    .mainprocess #feedback {
+        max-width: 200%;
+        margin-left: -50%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mainprocess #feedback {
+        max-width: 100%;
+        margin-left: 0%;
+    }
+}
+
 .mainprocess #feedback {
     transform: scale(1);
-    max-width: 200%;
     align-content: center;
-    margin-left: -50%;
     padding-top: 36px;
     padding-bottom: 36px;
 }
-
-
-/* .mainprocess .feedback .animate {
-    transform: scale(0.5);
-} */
 
 .mainprocess #wideimg {
     max-width: 130%;

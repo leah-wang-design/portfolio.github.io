@@ -56,14 +56,26 @@ a:active {
     width: 100%;
 }
 
+@media screen and (min-width: 1024px) {
+    .animation {
+        grid-template-rows: 2fr 3fr 3fr;
+        height: 2800px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .animation {
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 2000px;
+    }
+}
+
 .animation {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 5fr 5fr;
     grid-gap: 10px;
     margin-top: 160px;
     background-color: #1b1a21;
-    height: 2800px;
     width: 100%;
 }
 
@@ -139,15 +151,26 @@ a:active {
     vertical-align: text-top;
 }
 
+@media screen and (min-width: 1024px) {
+    .animation h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .animation h1 {
+        font-size: 36px;
+    }
+}
+
 .animation h1 {
-    color: white !important;
+    color: white;
     font-family: 'SF Pro', sans-serif;
-    font-size: 50px !important;
-    line-height: 1.2 !important;
-    font-weight: 600 !important;
-    padding-top: 2% !important;
-    padding-right: 20% !important;
-    padding-left: 20% !important;
+    line-height: 1.2;
+    font-weight: 600;
+    padding-top: 2%;
+    padding-right: 20%;
+    padding-left: 20%;
 }
 
 .banner .projecttitle {
@@ -161,15 +184,6 @@ a:active {
 
 .banner .projecttitle h4 {
     margin-top: 24px;
-}
-
-.introduction {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    font-family: 'Lato', sans-serif;
-    color: #2F2F2F;
-    column-gap: 100px;
-    padding: 200px 400px 0px 400px;
 }
 
 h1 {
@@ -225,20 +239,15 @@ li {
 }
 
 ol {
-    padding: 0 0 0 0.3em;
+    padding: 0 0 0 0.3em !important;
 }
 
-.navigatiorbar {
-    /* opacity: 0; */
+.navigationbar {
     display: none;
-    /* display:inline-block; */
-    /* grid-template-columns: 1fr 5fr; */
     position: fixed;
     top: 20%;
     z-index: 1;
-    /* align-items:right; */
     float: right;
-    /* right: 1.5%; */
 }
 
 .dot {
@@ -290,17 +299,8 @@ ol {
 }
 
 .btn {
-    padding: 0 0.2em 0 0.2em;
+    padding: 0 0.2em 0 0.2em !important;
 }
-
-
-/* .navigatiorbar .hidebtn{
-    margin-left: 7%;
-    font-size: 14px;
-    color:#BBBBBB;
-    padding-top:200px;
-    padding-left:1em;
-} */
 
 ion-icon {
     color: #BBBBBB;
@@ -354,16 +354,6 @@ h4 {
     text-align: left !important;
 }
 
-.introduction .box {
-    display: grid;
-    grid-template-rows: 1fr 3fr 1fr 2fr 1fr;
-}
-
-.introduction .sidebar {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 4fr;
-}
-
 .mainbanner {
     margin-top: 300px;
     background-color: #F3F3F7;
@@ -379,10 +369,47 @@ h4 {
     max-width: 100%;
 }
 
+#nav {
+    color: #BBBBBB;
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: .2em;
+    word-spacing: 1.5em;
+    padding: 1em;
+    margin: 50px 50px 50px 50px;
+    height: 10%;
+}
+
+#introduction {
+    font-family: 'Lato', sans-serif;
+    color: #2F2F2F;
+    padding: 10% 20% 0px 20%;
+}
+
+#basicinfo {
+    padding-right: 10%;
+}
+
+@media screen and (min-width: 1024px) {
+    .mainprocess {
+        padding-left: 28%;
+        padding-right: 28%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mainprocess {
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+}
+
 .mainprocess {
     font-family: 'Lato', sans-serif;
     color: #2F2F2F;
-    padding: 50px 400px 0px 400px;
+    align-content: center;
 }
 
 #persona {
@@ -417,74 +444,86 @@ h4 {
     right: 200px;
 }
 
-.highfidelity {
+#highfidelity {
     margin-top: 100px;
     margin-bottom: 100px;
     background-color: #1b1a21;
-    height: 700px;
-    display: grid;
-    grid-template-columns: 3fr 5.5fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 1%;
-    row-gap: 1%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    width: 100%;
+    height: 1000px;
     align-items: center;
 }
 
-.hifitext {
+#hifitext {
     color: white;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: 700;
     margin: 0px;
-    grid-column: 1/2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    padding-left: 28%;
     text-align: left;
-    padding-top: 22%;
+    padding-left: 5%;
 }
 
-.hifitext h3 {
+#hifitext h3 {
     color: white;
     font-weight: 700;
     text-align: left;
 }
 
-.hifitext h4 {
+#hifitext h4 {
     color: white;
     font-weight: 300;
 }
 
-#firstline {
-    height: 300px;
-    grid-column: 2/3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    max-height: 80%;
-    display: flex;
-    justify-content: center;
-    gap: 0.5em;
+#hifiimages {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
+@media screen and (min-width: 1024px) {
+    #hifiimages img {
+        max-width: 95%;
+    }
+    #hifiimages {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #hifiimages img {
+        max-width: 100%;
+    }
+    #hifiimages {
+        gap: 20px;
+    }
+}
+
+#hifiimages img {
+    padding-top: 5%;
+}
+
+@media screen and (min-width: 1024px) {
+    #firstline,
+    #secondline {
+        padding-right: 18%;
+        padding-left: 5%;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #firstline,
+    #secondline {
+        padding-right: 18%;
+        padding-left: 20%;
+        gap: 10px;
+    }
+}
+
+#firstline,
 #secondline {
-    height: 300px;
-    grid-column: 2/3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    max-height: 80%;
-    display: flex;
-    justify-content: center;
-    gap: 0.5em;
-}
-
-.highfidelity img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
     max-height: 100%;
-    /* max-width: 20%; */
-    /* padding-left: 1px;
-     */
 }
 
 iframe {

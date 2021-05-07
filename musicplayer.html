@@ -14,19 +14,21 @@
     <link rel="icon" href="LOGO.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </head>
 
 <div class="topbanner">
     <div class="mylogo">
         <img src="LOGO.png" alt="logo">
     </div>
-    <nav class="nav">
+    <nav id="nav">
         <a href="index.html">WORK</a>
         <a href="about-responsive.html">ABOUT</a>
     </nav>
 </div>
 
-<header class="banner" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" data-aos-easing="ease-out">
+<div class="banner" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" data-aos-easing="ease-out">
     <div class="projecttitle">
         <h1>Moodie Music Player</h1>
         <h4>A music app that allows you to listen to music by your mood, react to the music with mood and classify the songs into moods.</h4>
@@ -34,37 +36,48 @@
     <div class="image">
         <img src="music_iphone_mockup.png" alt="music player">
     </div>
-</header>
-<div class="introduction">
-    <div class="box">
-        <div class="head">
+</div>
+
+
+<div class="row" id="introduction">
+    <div class="col-xl-8" id="basicinfo">
+        <div>
             <h3>Background</h3>
         </div>
-        <div class="content">
-            <h4>I worked as a researcher and designer on designing this music app. The purpose of this project is meant to solve a real challenge I encounter in daily life in a creative way.</h4>
+        <div>
+            <h4>'Moodie' is a project I worked on as a researcher and designer for a UI course. The project aims to design a music player to solve a problem we encountered in daily life.</h4>
         </div>
-        <div class="Challenge">
-            <h3>Challenge</h3>
+        <div>
+            <h3>Problem</h3>
         </div>
-        <div class="hmw">
-            <h4>How might we enable users to quickly find music based on their needs, and organize the playlist in an intuitive way?</h4>
+        <div>
+            <h4>How might we enable users to quickly find music based on their emotions?</h4>
         </div>
     </div>
-    <div class="sidebar">
+
+    <div class="col-xl-4" id="sidebar">
         <div class="title">
             <h3>Role</h3>
         </div>
+        <div>
+            <h4>UX Research, UX Design, UI Design, Interaction Design, Prototype</h4>
+        </div>
+        <div>
+            <h3>Team</h3>
+        </div>
+        <div>
+            <h4>Personal Project</h4>
+        </div>
+        <div>
+            <h3>Tools</h3>
+        </div>
         <div class="sidebarcontent">
-            <h4>UX Designer, UI Designer</h4>
-        </div>
-        <div class="duration">
-            <h3>Duration</h3>
-        </div>
-        <div class="durationcontent">
-            <h4>1 month</h4>
+            <h4>Figma, Principle </h4>
         </div>
     </div>
 </div>
+
+
 
 <div class="animation">
     <div class="homepagegif" data-aos="slide-right" data-aos-duration="1000" data-aos-easing="ease-out">
@@ -94,13 +107,13 @@
     </div>
     <div class="description" data-aos="fade-in" data-aos-duration="2000" data-aos-easing="ease-out">
         <div class="descriptiontitle" id="titletext3">
-            <h4><img class="logo" style='display:inline;' src="Musicplayer/Diagram/logo.png" height=18px; alt="logo" padding-top="22%"> Moodie My Music and Account</h4>
+            <h4><img class="logo" style='display:inline;' src="Musicplayer/Diagram/logo.png" height=18px; alt="logo" padding-top="22%"> Moodie My Account</h4>
             <h1>Find your customized playlists and mood records</h1>
             <h5>Playlists have both the ones you created and "Mood list" that auto-generated from the reactions you made to the songs. </h5>
         </div>
     </div>
 </div>
-<div class="navigatiorbar">
+<div class="navigationbar">
     <!-- <li class="hidebtn"> <ion-icon name="caret-back-outline"></ion-icon><br>HIDE</li> -->
     <ol class="floatinglist" data-aos="fade-right">
         <li class="btn" id="1">
@@ -144,6 +157,7 @@
         </div>
         <div id="Defineproblem">
             <li>Define the Problem</li>
+            <h4>Based on the research and interviews I conducted, </h4>
             <h4>After gathering and catergorizing the feedback I got from app store reviews and interviews, I created personas to conclude the challenges they are currently facing: <br></h4>
             <div class="persona" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in">
                 <img id="persona" src="Musicplayer/Diagram/3_persona.png" alt="persona">
@@ -156,13 +170,17 @@
         <div id="Ideation">
             <li>Ideation</li>
             <h4>By sketching mindmap, I started to brainstorm as many as ideas I can, and pick the solutions that are more innovative and potentials to be developed further.</h4>
+            <h4>One idea I came up with is using 'mood' to label the song and categorize the song to different playlists. In order to validate the idea, I conducted research on the major music apps, and found 'genre' and 'mood' currently are the most important
+                influencers when choosing music to listen to, yet the terms to define 'mood'and 'genre' are often mixed, sometimes can be ambiguous and misleading. As a starting point, I referred to the <a href="https://sites.tufts.edu/eeseniordesignhandbook/2015/music-mood-classification/">report</a>                Tufts University did to classify the music mood, and came up with 10 moods to label the music.</h4>
+            influencers when choosing music to listen to, yet the terms to define 'mood'and 'genre' are often mixed, sometimes can be ambiguous and misleading. As a starting point, I referred to the <a href="https://sites.tufts.edu/eeseniordesignhandbook/2015/music-mood-classification/">report</a>            Tufts University did to classify the music mood, and came up with 10 moods to label the music.</h4>
+            </h4>
+            <h4>So How</h4>
             <h4> During the process, I tried to come up with solutions that can accomplish the following tasks:</h4>
             <img src="Musicplayer/Diagram/4_possible-solutions.png" alt="possible-solutions"><br>
             <h4>I sketched different <a href="Musicplayer/Diagram/5_DifferentPagesSketchIterations.png">versions</a> for each interface, after self-critizing for the first round and getting feedback from friends, I was able to come to a cleaner and better-organized
                 version showing below.</h4>
             <img id="balsmiq" src="Musicplayer/Diagram/6_Wireframebalsamiqsketch.png" alt="Wireframebalsamiqsketch">
-            <h4>One idea I came up with is using 'mood' to label the song and categorize the song to different playlists. In order to validate the idea, I conducted research on the major music apps, and found 'genre' and 'mood' currently are the most important
-                influencers when choosing music to listen to, yet the terms to define 'mood'and 'genre' are often mixed, sometimes can be ambiguous and misleading. As a starting point, I referred to the <a href="https://sites.tufts.edu/eeseniordesignhandbook/2015/music-mood-classification/">report</a>                Tufts University did to classify the music mood, and came up with 10 moods to label the music.</h4>
+
             <img src="Musicplayer/Diagram/7_emoticons.png" alt="emoticons">
             <h4>I also sketched different versions of logo for the app. The main idea is having a logo that tells people about the app's key feature 'integration of music and moods'. After showing different options to my friends and mentor, I narrowed down
                 the options to two, and combined them to a logo that has a vibe of a person listening to music and has a smile on its face.</h4>
@@ -178,25 +196,29 @@
 
 </div>
 
-<div class="highfidelity" data-aos="fade-up" data-aos-duration="400" data-aos-easing="ease-out">
-    <div class="hifitext">
+<div class="row" id="highfidelity" data-aos="fade-up" data-aos-duration="400" data-aos-easing="ease-out">
+    <div class="col-xl-4" id="hifitext">
         <h3>High-Fidelity</h3>
         <h4>In my first iterations, I tried to optimize the interactivity of the app by experimenting with different locations for the 'mood' choice bar, adjusting color contrast to better pop the 'mood' features, as well as maintaining a consistent use of
             colors throughout each page of the app.
     </div>
-    <div id="firstline" data-aos="fade-out" data-aos-duration="800" data-aos-easing="ease-out">
-        <img src="Musicplayer/High-fidelity/1_Homepage.png" alt="homepage">
-        <img src="Musicplayer/High-fidelity/2_Playerpage.png" alt="playerpage">
-        <img src="Musicplayer/High-fidelity/3_Comments.png" alt="playercomment">
-        <img src="Musicplayer/High-fidelity/4_Playlist.png" alt="Playlist">
-        <img src="Musicplayer/High-fidelity/5_Myaccount.png" alt="My Account">
-    </div>
-    <div id="secondline" data-aos="fade-out" data-aos-duration="800" data-aos-easing="ease-out">
-        <img src="Musicplayer/High-fidelity/6_Homepage-dark.png" alt="homepage">
-        <img src="Musicplayer/High-fidelity/7_Playerpage-dark.png" alt="playerpage">
-        <img src="Musicplayer/High-fidelity/8_Comments-dark.png" alt="playercomment">
-        <img src="Musicplayer/High-fidelity/9_Playlist-dark.png" alt="Playlist">
-        <img src="Musicplayer/High-fidelity/10_Myaccount-dark.png" alt="My Account">
+    <div class="col-xl-8" id="hifiimages">
+
+        <div id="firstline" data-aos="fade-out" data-aos-duration="800" data-aos-easing="ease-out">
+            <img src="Musicplayer/High-fidelity/1_Homepage.png" alt="homepage">
+            <img src="Musicplayer/High-fidelity/2_Playerpage.png" alt="playerpage">
+            <img src="Musicplayer/High-fidelity/3_Comments.png" alt="playercomment">
+            <img src="Musicplayer/High-fidelity/4_Playlist.png" alt="Playlist">
+            <img src="Musicplayer/High-fidelity/5_Myaccount.png" alt="My Account">
+        </div>
+        <div id="secondline" data-aos="fade-out" data-aos-duration="800" data-aos-easing="ease-out">
+            <img src="Musicplayer/High-fidelity/6_Homepage-dark.png" alt="homepage">
+            <img src="Musicplayer/High-fidelity/7_Playerpage-dark.png" alt="playerpage">
+            <img src="Musicplayer/High-fidelity/8_Comments-dark.png" alt="playercomment">
+            <img src="Musicplayer/High-fidelity/9_Playlist-dark.png" alt="Playlist">
+            <img src="Musicplayer/High-fidelity/10_Myaccount-dark.png" alt="My Account">
+        </div>
+
     </div>
 </div>
 

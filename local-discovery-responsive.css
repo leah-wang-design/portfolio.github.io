@@ -46,10 +46,10 @@
  
  h1 {
      font-family: 'Poppins', sans-serif !important;
-     color: #2F2F2F !important;
+     color: #2F2F2F;
      font-size: 28px !important;
      font-weight: 600 !important;
-     margin: 0!important;
+     margin: 0;
  }
  
  h2 {
@@ -152,11 +152,8 @@
  }
  
  #introduction {
-     /* display: grid;
-    grid-template-columns: 2fr 1fr; */
      font-family: 'Lato', sans-serif;
      color: #2F2F2F;
-     /* column-gap: 50px; */
      padding: 10% 20% 0px 20%;
  }
  
@@ -269,14 +266,26 @@
      vertical-align: text-top;
  }
  
+ @media screen and (min-width: 1024px) {
+     .animation h1 {
+         font-size: 50px;
+     }
+ }
+ 
+ @media screen and (max-width: 1024px) {
+     .animation h1 {
+         font-size: 36px;
+     }
+ }
+ 
  .animation h1 {
-     color: white !important;
+     color: white;
      font-family: 'SF Pro', sans-serif;
-     font-size: 50px !important;
-     font-weight: 600 !important;
-     padding-top: 2% !important;
-     padding-right: 20% !important;
-     padding-left: 20% !important;
+     line-height: 1.2;
+     font-weight: 600;
+     padding-top: 2%;
+     padding-right: 20%;
+     padding-left: 20%;
  }
  
  .mainbanner {
@@ -294,13 +303,24 @@
      max-width: 100%;
  }
  
+ @media screen and (min-width: 1024px) {
+     .mainprocess {
+         padding-left: 28%;
+         padding-right: 28%;
+     }
+ }
+ 
+ @media screen and (max-width: 1024px) {
+     .mainprocess {
+         padding-left: 14%;
+         padding-right: 14%;
+     }
+ }
+ 
  .mainprocess {
      font-family: 'Lato', sans-serif;
      color: #2F2F2F;
      align-content: center;
-     padding-left: 28%;
-     padding-right: 28%;
-     /* padding: 50px 20% 0px 20%; */
  }
  
  .mainprocess #wideimg {
@@ -491,13 +511,6 @@
  .btn {
      padding: 0 0.2em 0 0.2em !important;
  }
- /* .navigatiorbar .hidebtn{
-    margin-left: 7%;
-    font-size: 14px;
-    color:#BBBBBB;
-    padding-top:200px;
-    padding-left:1em;
-} */
  
  ion-icon {
      color: #BBBBBB;

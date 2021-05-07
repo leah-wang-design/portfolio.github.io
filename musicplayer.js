@@ -83,12 +83,10 @@ $(document).ready(function() {
         console.log("width" + width)
         const test = $(".bottomnav").position();
         if (width > 1487 && y > 4500 && y < test.top - 500) {
-            // $('.navigatiorbar'){
-            //     opacity:1;
-            // }
-            $('.navigatiorbar').fadeIn({ duration: 800 });
+
+            $('.navigationbar').fadeIn({ duration: 800 });
         } else {
-            $('.navigatiorbar').fadeOut();
+            $('.navigationbar').fadeOut();
         }
     });
 

@@ -25,7 +25,11 @@ $(document).ready(function() {
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
     });
+
 })
+
+
+
 $(window).on("load", function() {
     $(".loader-wrapper").fadeOut("slow");
 });

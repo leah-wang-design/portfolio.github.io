@@ -171,12 +171,21 @@ li {
     padding-right: 10%;
 }
 
+@media screen and (min-width: 1024px) {
+    .animation {
+        height: 1400px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .animation {
+        height: 900px;
+    }
+}
+
 .animation {
-    display: grid;
-    grid-template-rows: 2fr 1.5fr 2fr;
     margin-top: 160px;
     background-color: #545050;
-    height: 1400px;
     width: 100%;
 }
 
@@ -342,10 +351,21 @@ ion-icon {
     list-style-type: circle;
 }
 
+@media screen and (min-width: 1024px) {
+    #reactionoptions {
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #reactionoptions {
+        height: 550px;
+    }
+}
+
 #reactionoptions {
     width: 100vw;
     position: relative;
-    height: 650px;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
@@ -359,10 +379,21 @@ ion-icon {
     background-color: #EBEBEB;
 }
 
+@media screen and (min-width: 1024px) {
+    #Slideshowfinal {
+        height: 540px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #Slideshowfinal {
+        height: 400px;
+    }
+}
+
 #Slideshowfinal {
     width: 100vw;
     position: relative;
-    height: 640px;
     left: 50%;
     right: 50%;
     margin-top: 4em;
@@ -559,6 +590,18 @@ h7 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    svg {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    svg {
+        transform: scale(2.0);
+    }
 }
 
 svg.tea {

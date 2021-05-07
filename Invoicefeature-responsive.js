@@ -101,9 +101,11 @@ $(document).ready(function() {
         var wide1bottom = wide1.top + 300;
         console.log("wide1" + wide1top)
         var width = $(window).width()
-        console.log("width" + width)
         const test = $(".bottomnav").position();
-        if (width > 1487 && y > 4000 && y < wide1top || y > wide1bottom && y < test.top - 500) {
+        var end = test.top - 300;
+        const startpoint = $(".mainprocess").position();
+        var start = startpoint.top;
+        if (width > 1487 && y > start && y < end && y < wide1top || y > wide1bottom && width > 1487 && y > start && y < end) {
             $('.navigationbar').fadeIn({ duration: 800 });
         } else {
             $('.navigationbar').fadeOut();

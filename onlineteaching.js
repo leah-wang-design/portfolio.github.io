@@ -72,14 +72,12 @@ $(document).ready(function() {
         var wide1bottom = wide1.top + 300;
         var wide2top = wide2.top - 900;
         var wide2bottom = wide2.top;
-        console.log("wide1" + wide1top)
         var width = $(window).width()
-        console.log("width" + width)
         const test = $(".bottomnav").position();
-        if (width > 1487 && y > 3200 && y < wide1top || y > wide1bottom && y < wide2top || y > wide2bottom && y < test.top - 500) {
-            // $('.navigatiorbar'){
-            //     opacity:1;
-            // }
+        var end = test.top - 300;
+        const startpoint = $(".mainprocess").position();
+        var start = startpoint.top;
+        if (width > 1487 && y > start && y < wide1top || width > 1487 && y > wide1bottom && y < wide2top || width > 1487 && y > wide2bottom && y < end) {
             $('.navigationbar').fadeIn({ duration: 800 });
         } else {
             $('.navigationbar').fadeOut();

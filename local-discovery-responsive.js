@@ -14,9 +14,11 @@ $(document).ready(function() {
         function() { $(this).attr("src", "medium.svg"); }
     )
 });
+
 $(window).on("load", function() {
     $(".loader-wrapper").fadeOut("slow");
 });
+
 $(document).ready(function() {
     AOS.init();
 
@@ -68,11 +70,13 @@ $(document).ready(function() {
         var wide1top = wide1.top - 300;
         var wide1bottom = wide1.top + 300;
         var width = $(window).width()
-        console.log("wide1" + wide1top)
         console.log("width" + width)
         const test = $(".bottomnav").position();
+        var end = test.top - 300;
+        const startpoint = $("#research").position();
+        var start = startpoint.top;
         console.log("height" + test.top)
-        if (width > 1487 && y > 4000 && y < wide1top || y > wide1bottom && y < test.top - 500) {
+        if (width > 1487 && y > start && y < end && y < wide1top || y > wide1bottom && width > 1487 && y > start && y < end) {
             $('.navigationbar').fadeIn({ duration: 800 });
         } else {
             $('.navigationbar').fadeOut();

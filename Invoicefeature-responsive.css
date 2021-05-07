@@ -134,14 +134,12 @@ li {
 #projecttitle {
     margin-left: 20%;
     margin-right: 10%;
-    margin-top: 25%;
 }
 
 #bannerimage img {
     display: block;
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
-    margin-top: 23%;
 }
 
 #projecttitle h4 {
@@ -161,12 +159,23 @@ li {
     padding-right: 10%;
 }
 
+@media screen and (min-width: 1024px) {
+    .animation {
+        height: 2400px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .animation {
+        height: 1800px;
+    }
+}
+
 .animation {
     display: grid;
     grid-template-rows: 2fr 1.5fr 2fr;
     margin-top: 160px;
     background-color: #192539;
-    height: 2400px;
     width: 100%;
 }
 
@@ -494,6 +503,18 @@ h7 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    svg {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    svg {
+        transform: scale(2.0);
+    }
 }
 
 svg.tea {

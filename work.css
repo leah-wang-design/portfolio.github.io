@@ -65,6 +65,18 @@ a:hover {
     padding-left: 26%;
 }
 
+@media screen and (min-width: 1024px) {
+    .workthumbnail {
+        grid-template-rows: 600px 600px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .workthumbnail {
+        grid-template-rows: 500px 500px;
+    }
+}
+
 .workthumbnail {
     margin-top: 2rem;
     margin-left: 2rem;
@@ -72,7 +84,6 @@ a:hover {
     grid-gap: 1.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 600px 600px;
 }
 
 .work1container h4,
@@ -102,15 +113,24 @@ h5 {
     margin: 0;
 }
 
+.workimage {
+    display: flex;
+    align-items: center;
+    padding-bottom: 7%;
+}
+
 .work1container {
     position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-    /* background-color: #EFF1FF; */
     cursor: pointer;
     background-color: #FFF5F4;
+}
+
+#workcontent {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
 }
 
 
@@ -121,19 +141,15 @@ h5 {
 
 .work1container img {
     display: block;
-    max-width: 100%;
+    max-width: 90%;
     margin: auto;
     /* margin-left: 5%; */
-    margin-right: 5%;
-    padding-top: 0%;
 }
 
 .work2container {
     position: relative;
     grid-column: 2/2;
     grid-row: 1/2;
-    display: grid;
-    grid-template-rows: 1fr 2fr;
     background-color: #F4F6FF;
     cursor: pointer;
 }
@@ -152,8 +168,6 @@ h5 {
     position: relative;
     grid-column: 1/2;
     grid-row: 2/2;
-    display: grid;
-    grid-template-rows: 1fr 2fr;
     /* background-color: #EFF1FF; */
     cursor: pointer;
     background-color: #F2F8F6;
@@ -171,8 +185,6 @@ h5 {
     position: relative;
     grid-column: 2/2;
     grid-row: 2/2;
-    display: grid;
-    grid-template-rows: 1fr 2fr;
     /* background-color: #EFF1FF; */
     cursor: pointer;
     background-color: #F7F5FF;
@@ -377,6 +389,18 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    svg {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    svg {
+        transform: scale(2.0);
+    }
 }
 
 svg.tea {

@@ -52,9 +52,11 @@ a:active {
 }
 
 #profileimage img {
-    margin-top: 20px;
-    width: 80%;
-    justify-self: right;
+    display: block;
+    padding-top: 20px;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    width: 70%;
 }
 
 .introductiontext {

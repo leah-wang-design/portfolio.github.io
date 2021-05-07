@@ -159,6 +159,18 @@ a:active {
     align-items: center;
 }
 
+@media screen and (min-width: 1024px) {
+    svg {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    svg {
+        transform: scale(2.0);
+    }
+}
+
 svg.tea {
     --secondary: white;
 }

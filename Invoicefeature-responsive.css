@@ -161,19 +161,19 @@ li {
 
 @media screen and (min-width: 1024px) {
     .animation {
-        height: 2400px;
+        height: 2000px;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .animation {
-        height: 1800px;
+        height: 1400px;
     }
 }
 
 .animation {
     display: grid;
-    grid-template-rows: 2fr 1.5fr 2fr;
+    grid-template-rows: 0.7fr 0.7fr 1fr;
     margin-top: 160px;
     background-color: #192539;
     width: 100%;
@@ -207,6 +207,7 @@ li {
 .animation .playerpage img {
     max-width: 95%;
     margin-top: 10%;
+    padding-top: 6%;
     /* padding-top: 5%; */
 }
 
@@ -214,8 +215,9 @@ li {
     display: none;
     position: absolute;
     max-width: 50%;
-    padding-left: 2em;
+    padding-left: 4em;
     justify-self: center;
+    padding-top: 6%;
 }
 
 .animation h4 {
@@ -245,7 +247,7 @@ li {
 
 @media screen and (min-width: 1024px) {
     .animation h1 {
-        font-size: 50px !important;
+        font-size: 42px !important;
     }
 }
 
@@ -262,7 +264,7 @@ li {
     font-weight: 600;
     padding-top: 2%;
     padding-right: 20%;
-    padding-left: 20%;
+    padding-left: 15%;
 }
 
 .mainbanner {

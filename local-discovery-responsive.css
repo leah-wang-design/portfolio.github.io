@@ -163,13 +163,13 @@
  
  @media screen and (min-width: 1024px) {
      .animation {
-         height: 2800px;
+         height: 2400px;
      }
  }
  
  @media screen and (max-width: 1024px) {
      .animation {
-         height: 2200px;
+         height: 1600px;
      }
  }
  

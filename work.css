@@ -345,6 +345,9 @@ h5 {
     text-align: left;
 }
 
+
+/*this is for bottom info*/
+
 .bottominfo {
     height: 28px;
     margin-top: 15%;
@@ -363,20 +366,16 @@ h5 {
     color: #5056E7
 }
 
-.bottominfo h4 {
+.bottominfo h5 {
     color: #2F2F2F;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+    font-family: 'SF Pro', sans-serif!important;
+    font-weight: 400!important;
+    font-size: 12px!important;
+    text-align: center;
+    vertical-align: text-top;
+    padding: 0;
     margin: 0px;
-}
-
-#year {
-    color: #2F2F2F;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0px;
+    text-align: center;
 }
 
 .loader-wrapper {

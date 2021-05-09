@@ -58,6 +58,7 @@
 
 <div class="row" id="introduction">
     <div class="col-xl-8" id="basicinfo">
+
         <div class="head">
             <h3>Background</h3>
         </div>
@@ -181,36 +182,45 @@
     <div class="mainprocess">
         <div id="research">
             <li>Empathize</li>
-            <h4>Do you find it challenging to find something fun to do without spending hours Googling and browsing different websites? You are definitely not the only one who feels this way - searching for trending events often requires users to use many
-                different online sources such as Google, Eventbrite, Facebook Event, Instagram, etc. Besides, users need to use map apps, ticket apps, time and dates, etc for checking details of the events or places. This process is time-consuming, laborious,
-                and it can be very frustrating for many people.</h4>
+            <h4>Do you find it challenging to find something fun to do without spending hours Googling and browsing websites? You are not the only one who feels this way - searching for trending events often requires users to use many different online sources
+                such as Google, Eventbrite, Facebook Event, Instagram, etc. Besides, users need to use map apps, ticket apps, time and dates, etc., for checking details of the events or places. This process is time-consuming, laborious, and it can be
+                very frustrating for many people.
+            </h4>
             <li class="subtitle">Research on existing event discovery apps</li>
             <h4> In order to get a better understanding of the current event discovery apps, I looked into some of the researches and studies of the current industry, including <a href="http://www.hughmalkin.com/blogwriter/2015/9/23/why-no-one-has-solved-event-discovery">Hugh Malkin's study and learning from Hugecity</a>.
-                <br><br> I learned 1) to provide users with lists of events, there are many ways for the back-end developers to collect event data through APIs and web scraping techniques, so the app doesn't necessarily rely on event organizers; 2) In
-                today’s time starved world, people react to time in two different ways, they either plan or procrastinate. I should consider users who like to plan ahead and people who are just looking for things they can do right away during the design
-                process.
+                <br><br> I learned 1) There are many ways for the back-end developers to collect event data through APIs and web scraping techniques, so the app doesn't necessarily rely on event organizers;
+                <br> 2) There are two types of typical users I need to consider in the design process: users who like to plan and people looking for things they can do right away.
             </h4>
+            <br>
             <h4>I also conducted competitive studies on the most used app related to fun-discovery, including Google Map, Facebook Event, Facebook Local, Yelp, Eventbrite, Snap Map. Among all the apps mentioned, Facebook events and Facebook local are the
                 most ideal ones to use when users are not looking for anything specific but fun stuff they can do to get out of their houses. (Note: Facebook Local app was no longer available since Jan 2021 after this research was conducted)</h4>
-            <img src="local-discovery-app/Diagram/02-Competitive-Study.png" alt="competitivestudy" data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in-back" id="wideimg">
+            <img src="local-discovery-app/Diagram/02-Competitive-Study.png" alt="competitivestudy" data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in-back">
             <br>
             <br>
             <h5>Competitive Analysis <a href="https://drive.google.com/file/d/1cyPSGKxbyeuBbbYiAxjrqOx1G3hS7y7g/view?usp=sharing"> (click to see heuristic analysis for the apps) </a></h5>
             <li class="subtitle">User Research and Interviews</li>
-            <h4>In order to better understand the users' pain points and validate the idea, I designed questionnaires to 1) find target audiences to conduct interviews; 2) understand the challenges people have while looking for fun events and places.<br><br><b>Target
-                Audience:</b><br>
+            <h4>In order to better understand the users' pain points and validate the idea, I designed questionnaires to 1) find target audiences to conduct interviews; 2) understand the challenges people have while looking for fun events and places.<br><br><b></h4>
+                <h4 id="h4title">Target Audience:</b></h4>
+            <div id="sidebarsection">
+
                 <li id="h4list">Age between 23-35.</li>
                 <li id="h4list">Mainly medium income group.</li>
                 <li id="h4list">People who are interested in going out for events and fun places.</li>
-                <li id="h4list">comfortable with social media and mobile apps.</li>
-                <br>Based on the 26 responses I received from people aged between 23-35, I found 46.2% of them are <b>proactively looking for fun things to do or places to go</b>, while 42.3% of them <b>having trouble finding the types of events they are
+                <li id="h4list">People who are comfortable with social media and mobile apps.</li>
+            </div>
+            <br>
+            <h4>Based on the 26 responses I received from people aged between 23-35, I found 46.2% of them are <b>proactively looking for fun things to do or places to go</b>, while 42.3% of them <b>having trouble finding the types of events they are
                 interested in</b> and 23.1% of people are <b>not satisfied with the existing websites and apps.</b></h4>
             <img src="local-discovery-app/Diagram/03-SurveyQ-3.png" alt="survey1" data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in-back">
+            <h5>Partial Survey Results</h5>
+            <br>
+            <br>
             <h4>With the information I gathered through the survey, I got in touch with five people who are in my target group and conducted in-person and online interviews with them. Empathy mapping helped me realized what user think, say, do and feel can
                 be different. I observed the user’s behavior during user interview to collect data which enabled me to think from the users’ perspective.</h4>
-            <img src="local-discovery-app/Diagram/04-Interview.png" data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in-back" id="wideimg">
+            <img src="local-discovery-app/Diagram/04-Interview.png" data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in-back">
             <h5>Interview Insights <a href="https://drive.google.com/drive/folders/173zl5TcVRaZ3pAUnFQZOzL02DEvYgCTL?usp=sharing"> (click to see the empathy mapping) </a></h5>
         </div>
+
         <div id="Defineproblem">
             <li>Define the Problem</li>
             <h4>By synthesizing the information I collected through research and interviews, I defined an actionable problem statement based on a deep understanding of the user’s specific needs.</h4>
@@ -236,37 +246,38 @@
             <br>
             <h4>With a general direction in mind (a fun-discovery app) and well-defined target users, I mapped out user journeys to help me with identifying design and innovation opportunities. I realized the opportunities of intervention occur primarily
                 in the stages of 'searching for events' and 'sifting through events', where my interventions can help users quickly find different types of events with reliable reviews.</h4>
-            <img src="local-discovery-app/Diagram/07-Userjourney.png" alt="UserJourney" data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in-back" id="wideimg">
-            <h5>User Journey for Elizabeth</h5>
+            <img src="local-discovery-app/Diagram/07-Userjourney.png" alt="UserJourney" data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in-back">
+            <h5>User Journey for Elizabeth<a href="local-discovery-app/Diagram/07-Userjourney.png">(click to enlarge)</a></h5>
             <br>
             <br>
             <br>
             <li class="subtitle">HMW Statement</li>
-            <h4><b>How might we help users discover and share about local events and places easily and quickly</b></h4>
-
+            <div id="sidebarsection">
+                <h4 id="hmw">How might we help users discover and share about local events and places easily and quickly?</h4>
+            </div>
         </div>
         <div id="Ideation">
             <li>Ideation</li>
             <h4>With the problem statement in mind, I began to think of different user stories and challenges, and possible solutions to solve the problem.</h4>
             <li class="subtitle">Brainstorming Ideas</li>
             <h4>What can help users quickly find trending events? What are the current sources of information of my target users? How do I make the app interactive and engaging? etc. To keep track and organize my thoughts, I used Mind Map to write down my
-                ideas. <a href="local-discovery-app/Diagram/08-Mindmap.jpg">(Click to see the Mind Map)</a> <br> <br>Allow users to discover and posts about others' experiences, check the events and places happening around users on the Map, form social
-                groups with users who share similar interests...I began to have some decent ideas that were worth pursuing.
+                ideas.
+                <a href="local-discovery-app/Diagram/08-Mindmap.jpg">(Click to see the Mind Map)</a> <br> <br>Allow users to discover and posts about others' experiences, check the events and places happening around users on the Map, form social groups
+                with users who share similar interests...I began to have some decent ideas that were worth pursuing.
             </h4>
-            <li class="subtitle">MVP and User Stories</li>
+            <li class="subtitle">User Stories</li>
             <h4>I regularly check back with the user research and user personas to develop sets of user stories based on the features that users may want to see while using the app. <img src="local-discovery-app/Diagram/09-User-Stories.jpg">
                 <h5>User Stories Map <a href="local-discovery-app/Diagram/09-User-Stories.jpg">(Click to enlarge)</a></h5>
             </h4>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h4>The MVP was defined as the following:</h4>
-            <br>
-            <li id="h4list">Allow users to discover and save events and places</li>
-            <li id="h4list">Allow users to check reviews about the events and places</li>
-            <li id="h4list">Help users find events and places near them on Map</li>
-            <li id="h4list">Help users share about their experience about the events and places</li>
+
+            <li class="subtitle">MVP</li>
+            <h4>The MVP is defined as following:</h4>
+            <div id="sidebarsection">
+                <li id="h4list">Allow users to discover and save events and places</li>
+                <li id="h4list">Allow users to check reviews about the events and places</li>
+                <li id="h4list">Help users find events and places near them on Map</li>
+                <li id="h4list">Help users share about their experience about the events and places</li>
+            </div>
         </div>
         <div id="DesignandIterations">
             <li>Design and Iterations</li>
@@ -281,10 +292,11 @@
             <br>
             <li class="subtitle">User Flows</li>
             <h4>I mapped out the most critical user flows I identified for the user stories.</h4>
-            <li id="h4list">1- Discover events and places by checking what other people are up to.</li>
-            <li id="h4list">2- Share about their experience with the events or places.</li>
-            <li id="h4list">3- Users go straight to the search bar and search for topics they are interested in.</li>
-            <li id="h4list">4- Find what's happening around them on the map.</li>
+
+            <h4>1- Discover events and places by checking what other people are up to.</h4>
+            <h4>2- Share about their experience with the events or places.</h4>
+            <h4>3- Users go straight to the search bar and search for topics they are interested in.</h4>
+            <h4>4- Find what's happening around them on the map.</h4>
             <img src="local-discovery-app/Diagram/11_User-Flow-01.jpg" alt="UserFlow" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-back">
             <h5>User Flows</h5>
             <li class="subtitle">Sketches and User Testing</li>
@@ -372,10 +384,12 @@
 
             <li class="subtitle">High-fidelity Revised</li>
             <h4>I revised the interfaces and made sure the prototype can allow users to complete the most important tasks I identified:<br><br>
-                <li id="h4list">1. Explore other users' posts, check details and save the posts. </li>
-                <li id="h4list">2. Explore on the map, choose the type of activity and check results.</li>
-                <li id="h4list">3. Browse through the result list on the map, check detail and add the event to calendar. </li>
-                <li id="h4list">4. Check the events and the activity saved in the account page.</li>
+                <div id="sidebarsection">
+                    <li id="h4list"> Explore other users' posts, check details and save the posts. </li>
+                    <li id="h4list"> Explore on the map, choose the type of activity and check results.</li>
+                    <li id="h4list"> Browse through the result list on the map, check detail and add the event to calendar. </li>
+                    <li id="h4list"> Check the events and the activity saved in the account page.</li>
+                </div>
             </h4>
 
             <div id="fullwidthsection">
@@ -400,27 +414,29 @@
             </div>
         </div>
     </div>
-    <div class="bottomnav">
-        <div class="bottomnavcontent">
-            <h7>SALESCHAMP</h7>
-            <h6 style="text-decoration: underline;"><a href="Invoicefeature-responsive.html" id="bottomnavname">Invoice Feature Design</a></h6>
-        </div>
-        <div class="bottomnavcontent">
-            <h7>BROWARD PUBLIC SCHOOLS</h7>
-            <h6 style="text-decoration: underline;"><a href="onlineteaching.html">Online Teaching App Design</a></h6>
-        </div>
+</div>
+<div class="bottomnav">
+    <div class="bottomnavcontent">
+        <h7>SALESCHAMP</h7>
+        <h6 style="text-decoration: underline;"><a href="Invoicefeature-responsive.html" id="bottomnavname">Invoice Feature Design</a></h6>
+    </div>
+    <div class="bottomnavcontent">
+        <h7>BROWARD PUBLIC SCHOOLS</h7>
+        <h6 style="text-decoration: underline;"><a href="onlineteaching.html">Online Teaching App Design</a></h6>
+    </div>
 
+</div>
+<div class="bottominfo">
+    <div>
+        <a href="https://www.linkedin.com/in/leah-fu-wang/"><img src="linkedin-in-brands.svg" id="linkedinpng"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="mailto:fw2286@columbia.edu"><img src="envelope-regular.svg" id="emailpng"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/leah-wang-design"><img src="github-01.svg" id="githubpng"></a>
+        <br><br>
     </div>
-    <div id="bottominfo">
-        <div>
-            <a href="https://www.linkedin.com/in/leah-fu-wang/"><img src="linkedin-in-brands.svg" id="linkedinpng"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="mailto:fw2286@columbia.edu"><img src="envelope-regular.svg" id="emailpng"></a>
-            <br><br>
-        </div>
-        <div>
-            <h4>&copy; leah wang <span id="year">2021</span></h4>
-        </div>
+    <div>
+        <h5>&copy; Designed and Coded by leah wang <span id="year">2021</span></h5>
     </div>
+</div>
 </div>
 <div class="loader-wrapper">
     <svg class="tea" width='37' height='48' viewbox='0 0 37 48' fill='none' xmlns='http://www.w3.org/2000/svg'> 

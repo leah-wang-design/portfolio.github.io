@@ -73,11 +73,16 @@ h3 {
     text-align: left !important;
 }
 
+#h5description {
+    color: #6A6A6A;
+    text-align: left;
+}
+
 h4 {
-    color: #2F2F2F;
+    color: #424040;
     font-family: 'Nunito Sans', sans-serif !important;
     font-size: 18px !important;
-    font-weight: 400;
+    font-weight: 400 !important;
     margin: 0px !important;
     padding-top: 10px !important;
     line-height: 150% !important;
@@ -89,17 +94,13 @@ h4 {
     font-weight: 300 !important;
 }
 
-#h4list {
+#h4title {
     color: #2F2F2F;
-    font-family: 'Nunito Sans', sans-serif !important;
-    font-size: 18px !important;
-    font-weight: 400 !important;
-    margin: 0px !important;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    line-height: 120% !important;
-    text-align: left;
-    list-style-type: circle;
+    font-family: 'SF Pro', sans-serif !important;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px;
+    list-style-type: none;
 }
 
 h5 {
@@ -107,19 +108,14 @@ h5 {
     font-family: 'SF Pro', sans-serif!important;
     font-weight: 400!important;
     font-size: 12px!important;
-    text-align: center;
+    text-align: center !important;
     vertical-align: text-top;
-}
-
-#h5description {
-    color: #6A6A6A;
-    text-align: left;
 }
 
 li {
     list-style: none;
     color: #455EF2;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'SF pro', sans-serif;
     text-align: center;
     font-size: 32px;
     font-weight: 700;
@@ -127,6 +123,38 @@ li {
     text-align: center;
     padding-top: 150px;
     padding-bottom: 20px;
+}
+
+#sidebarsection {
+    border-left: 2px solid #000;
+    padding-left: 20px;
+    margin-top: 14px;
+    margin-bottom: 24px;
+}
+
+#h4list {
+    color: #424040;
+    font-family: 'SF Pro', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    font-style: italic;
+    margin: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    line-height: 200% !important;
+    text-align: left;
+    list-style-type: none;
+}
+
+#hmw {
+    color: #424040;
+    font-family: 'SF Pro', sans-serif !important;
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    margin: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    line-height: 150% !important;
 }
 
 @import url(//db.onlinewebfonts.com/c/28adc6c6fd652123c3e173389a8be17f?family=SF+Pro+Text);
@@ -340,38 +368,25 @@ ion-icon {
 }
 
 .subtitle {
-    color: #2F2F2F;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
+    color: #424040;
+    font-family: 'SF Pro', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
     margin: 0px;
     padding-top: 120px;
     text-align: left;
-    list-style-type: disc;
+    list-style-type: none;
 }
 
 .subsubtitle {
     color: #2F2F2F;
-    font-family: 'Lato', sans-serif;
+    font-family: 'SF Pro', sans-serif;
     font-size: 18px;
     font-weight: 600;
     margin: 0px;
     padding-top: 100px;
     text-align: center;
     list-style-type: none;
-}
-
-.h4list {
-    color: #2F2F2F;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 120%;
-    text-align: left;
-    list-style-type: circle;
 }
 
 @media screen and (min-width: 1024px) {
@@ -404,7 +419,7 @@ ion-icon {
 
 @media screen and (min-width: 1024px) {
     #Slideshowfinal {
-        height: 540px;
+        height: 580px;
     }
 }
 
@@ -565,7 +580,10 @@ h7 {
     justify-self: center;
 }
 
-#bottominfo {
+
+/*this is for bottom info*/
+
+.bottominfo {
     height: 28px;
     margin-top: 15%;
     text-align: center;
@@ -573,34 +591,23 @@ h7 {
     margin-bottom: 10%;
 }
 
-
-/*this is for bottom info*/
-
-#bottominfo img {
+.bottominfo img {
     height: 28px;
     opacity: 1;
 }
 
-#bottominfo a:hover {
+.bottominfo a:hover {
     text-decoration: none;
-    color: #455EF2
+    color: #5056E7
 }
 
-#bottominfo h4 {
-    color: #2F2F2F;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 0px;
-    text-align: center !important;
-}
-
-#year {
-    color: #2F2F2F;
-    font-family: 'Lato', sans-serif;
+.bottominfo h5 {
+    font-family: 'Poppins', Helvetica, Arial, serif;
     font-size: 16px;
     font-weight: 400;
+    padding: 0;
     margin: 0px;
+    text-align: center;
 }
 
 .loader-wrapper {

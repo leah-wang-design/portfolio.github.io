@@ -26,6 +26,7 @@ $(document).ready(function() {
     // });
 
 })
+
 $(document).ready(function() {
     $("#linkedinpng").hover(
         function() { $(this).attr("src", "linkedin-in-brands-hover.svg"); },
@@ -37,9 +38,9 @@ $(document).ready(function() {
         function() {
             $(this).attr("src", "envelope-regular.svg");
         });
-    $("#mediumpng").hover(
-        function() { $(this).attr("src", "medium-hover.svg"); },
-        function() { $(this).attr("src", "medium.svg"); }
+    $("#githubpng").hover(
+        function() { $(this).attr("src", "github-hover.svg"); },
+        function() { $(this).attr("src", "github-01.svg"); }
     )
 });
 

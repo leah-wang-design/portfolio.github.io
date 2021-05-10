@@ -27,8 +27,22 @@ $(document).ready(function() {
     });
 
 })
+$()
 
 
+$(document).scroll(function() {
+    var y = $(this).scrollTop();
+    const mouse = $(".separator").position();
+
+    const z = mouse.top + 0;
+    console.log("mouse" + z);
+    if (y > z) {
+
+        $('.mousesection').fadeOut({ duration: 1200 });
+    } else {
+        $('.mousesection').fadeIn({ duration: 800 });
+    }
+});
 
 $(window).on("load", function() {
     $(".loader-wrapper").fadeOut("slow");

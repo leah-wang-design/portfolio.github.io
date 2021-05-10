@@ -51,37 +51,123 @@ a:hover {
     /* display: grid;
     grid-template-columns: 1fr 3fr; */
     width: 64%;
-    height: 580px;
+    height: 550px;
     /* background: #FAF9F8; */
     text-align: left;
+    padding-left: 14%;
 }
 
 .introduction h3 {
     font-family: 'Poppins', Helvetica, Arial, serif;
     color: #2f2f2f;
-    font-size: 48px;
+    font-size: 100px;
     font-weight: 600;
-    padding-top: 12%;
-    padding-left: 26%;
+    padding-top: 5%;
+    margin-bottom: 0;
+}
+
+.separator {
+    width: 220px;
+    height: 1px;
+    margin-bottom: 20px;
+    background-color: #2f2f2f;
+}
+
+.separator {
+    animation: separatoranimation 4s ease 0s 1 normal none;
+}
+
+@keyframes separatoranimation {
+    0.0% {
+        width: 0px;
+    }
+    100% {
+        width: 220px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .workthumbnail {
-        grid-template-rows: 600px 600px;
+        grid-template-rows: 450px 450px;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .workthumbnail {
-        grid-template-rows: 500px 500px;
+        grid-template-rows: 350px 350px;
+    }
+}
+
+h4 {
+    font-family: "SF pro", Helvetica, Arial, serif;
+    color: #2f2f2f;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    margin: 0;
+}
+
+.mousesection {
+    animation: mouseanmation 0s 4s forwards;
+    visibility: hidden;
+}
+
+@keyframes mouseanmation {
+    to {
+        visibility: visible;
+    }
+}
+
+.mousesection {
+    margin-top: 24px;
+    margin-bottom: 10%;
+}
+
+.mousesection h5 {
+    color: #C4C4C4;
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: 1em;
+}
+
+.mouse {
+    width: 20px;
+    height: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    border: 1px solid #C4C4C4;
+    -webkit-animation: intro 1s;
+    animation: intro 1s;
+}
+
+.scroll {
+    display: block;
+    width: 3px;
+    height: 3px;
+    margin: 6px auto;
+    border-radius: 4px;
+    background: #5056E7;
+    -webkit-animation: finger 2s infinite;
+    animation: finger 2s infinite;
+}
+
+@keyframes finger {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
     }
 }
 
 .workthumbnail {
     margin-top: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    grid-gap: 1.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-gap: 28px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -91,7 +177,7 @@ a:hover {
 .work3container h4,
 .work4container h4 {
     font-family: "lato", Helvetica, Arial, serif;
-    color: #9E9E9E;
+    color: #2f2f2f;
     font-weight: 600;
     letter-spacing: .1rem;
     text-transform: uppercase;
@@ -102,8 +188,8 @@ a:hover {
 }
 
 h5 {
-    font-family: "lato", Helvetica, Arial, serif;
-    color: #9E9E9E;
+    font-family: "Roboto Mono", Helvetica, Arial, serif;
+    color: #2f2f2f;
     font-size: 14px;
     font-weight: 400;
     /* padding-top: 2%; */
@@ -121,10 +207,11 @@ h5 {
 
 .work1container {
     position: relative;
+    border-radius: 3px;
     grid-column: 1/2;
     grid-row: 2/2;
     cursor: pointer;
-    background-color: #FFF5F4;
+    background-image: linear-gradient( 53deg, #FFD1CC, #F7E8DE);
 }
 
 #workcontent {
@@ -141,16 +228,17 @@ h5 {
 
 .work1container img {
     display: block;
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
     /* margin-left: 5%; */
 }
 
 .work2container {
     position: relative;
+    border-radius: 3px;
     grid-column: 2/2;
     grid-row: 1/2;
-    background-color: #F4F6FF;
+    background-image: linear-gradient(53deg, #DCE6FF, #E1F3F6);
     cursor: pointer;
 }
 
@@ -166,35 +254,36 @@ h5 {
 
 .work3container {
     position: relative;
+    border-radius: 3px;
     grid-column: 1/2;
     grid-row: 1/2;
     /* background-color: #EFF1FF; */
     cursor: pointer;
-    background-color: #F2F8F6;
+    background-image: linear-gradient( 53deg, #c7e3e9, #ecf4ec);
 }
 
 .work3container img {
     display: block;
-    max-width: 80%;
-    margin-left: 10%;
-    margin-right: 5%;
+    max-width: 75%;
+    margin: auto;
     padding-top: 6%;
 }
 
 .work4container {
     position: relative;
+    border-radius: 3px;
     grid-column: 2/2;
     grid-row: 2/2;
     /* background-color: #EFF1FF; */
     cursor: pointer;
-    background-color: #F7F5FF;
+    background-image: linear-gradient( 53deg, #F1ECFF, #EEF4FF);
 }
 
 .work4container img {
     display: block;
-    max-width: 60%;
+    max-width: 55%;
     margin: auto;
-    padding-top: 8%;
+    padding-top: 4%;
 }
 
 .overlaywork1 {
@@ -384,7 +473,7 @@ h5 {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #242f3f;
+    background-color: #2f2f2f;
     display: flex;
     justify-content: center;
     align-items: center;

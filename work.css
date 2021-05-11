@@ -126,7 +126,6 @@ h4 {
 .mousesection h5 {
     color: #C4C4C4;
     text-align: center;
-    padding-left: 0;
     padding-bottom: 1em;
 }
 
@@ -179,7 +178,7 @@ h4 {
     .work4container h4,
     .work5container h4,
     .work6container h4 {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 

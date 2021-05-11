@@ -4,7 +4,7 @@ body {
 
 .bodycolor {
     color: #000;
-    background-color: #d6eee9;
+    background-color: #d6eeed;
     transition: background-color 1s ease !important;
 }
 
@@ -21,26 +21,15 @@ body {
 @media screen and (max-width: 1024px) {
     .panel {
         /* min height incase content is higher than window height */
-        min-height: 30vh;
+        min-height: 100vh;
     }
-}
-
-.panel {
-    /* min height incase content is higher than window height */
-    /* min-height: 100vh; */
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: sans-serif; */
-    /* outline: 10px solid hotpink; */
-    /* turn above on to see the edge of panels */
 }
 
 
 /* colours */
 
 .color-violet {
-    background-color: #E1EFEC;
+    background-color: #e0dcf5;
 }
 
 .color-indigo {
@@ -121,7 +110,19 @@ a:active {
 }
 
 .blankstart {
-    height: 700px;
+    height: 100vh;
+}
+
+@media screen and (min-width: 1024px) {
+    .blankstart h1 {
+        margin-top: 16%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blankstart h1 {
+        margin-top: 50%;
+    }
 }
 
 .blankstart h1 {
@@ -131,7 +132,6 @@ a:active {
     font-weight: 600 !important;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 16%;
     text-align: center;
 }
 
@@ -332,7 +332,7 @@ li {
 
 @media screen and (max-width: 1024px) {
     .animation {
-        height: 3300px;
+        height: 8200px;
     }
 }
 

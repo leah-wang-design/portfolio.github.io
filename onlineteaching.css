@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+.top {
+    background-image: linear-gradient( 53deg, #b9d6dd, #ecf4ec);
+}
+
 .topbanner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -159,11 +163,9 @@ li {
 
 @import url(//db.onlinewebfonts.com/c/28adc6c6fd652123c3e173389a8be17f?family=SF+Pro+Text);
 #banner {
-    /* grid-gap: 50px; */
-    /* display: grid; */
-    margin-top: 60px !important;
-    background-color: #E9F5F5;
-    height: 600px;
+    /* margin-top: 60px !important; */
+    /* background-color: #E9F5F5; */
+    height: 830px;
     align-items: center;
     width: 100%;
     margin-left: 0 !important;

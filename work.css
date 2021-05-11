@@ -88,13 +88,13 @@ a:hover {
 
 @media screen and (min-width: 1024px) {
     .workthumbnail {
-        grid-template-rows: 450px 450px;
+        grid-template-rows: 450px 450px 450px;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .workthumbnail {
-        grid-template-rows: 350px 350px;
+        grid-template-rows: 350px 350px 350px;
     }
 }
 
@@ -175,7 +175,9 @@ h4 {
 .work1container h4,
 .work2container h4,
 .work3container h4,
-.work4container h4 {
+.work4container h4,
+.work5container h4,
+.work6container h4 {
     font-family: "lato", Helvetica, Arial, serif;
     color: #2f2f2f;
     font-weight: 600;
@@ -284,6 +286,38 @@ h5 {
     max-width: 55%;
     margin: auto;
     padding-top: 4%;
+}
+
+.work5container {
+    position: relative;
+    border-radius: 3px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: linear-gradient(53deg, #E1EFEC, #F8F4E4);
+    cursor: pointer;
+}
+
+.work5container img {
+    display: block;
+    max-width: 75%;
+    margin: auto;
+    padding-top: 4%;
+}
+
+.work6container {
+    position: relative;
+    border-radius: 3px;
+    grid-column: 2/2;
+    grid-row: 3/4;
+    background-image: linear-gradient(53deg, #EEF4FF, #EEF4FF);
+    cursor: pointer;
+}
+
+.work6container img {
+    display: block;
+    max-width: 70%;
+    margin: auto;
+    padding-top: 0%;
 }
 
 .overlaywork1 {
@@ -421,6 +455,80 @@ h5 {
 }
 
 .overlaywork4text {
+    color: #2f2f2f;
+    font-size: 20px;
+    font-weight: 400;
+    /* letter-spacing: .1rem; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.work5container:hover .overlaywork5 {
+    opacity: 0.98;
+}
+
+.work5container:hover {
+    cursor: pointer;
+}
+
+.overlaywork5 {
+    font-family: "Poppins", Helvetica, Arial, serif;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #F8F8F8;
+    cursor: pointer;
+}
+
+.overlaywork5text {
+    color: #2f2f2f;
+    font-size: 20px;
+    font-weight: 400;
+    /* letter-spacing: .1rem; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.work6container:hover .overlaywork6 {
+    opacity: 0.98;
+}
+
+.work6container:hover {
+    cursor: pointer;
+}
+
+.overlaywork6 {
+    font-family: "Poppins", Helvetica, Arial, serif;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #F8F8F8;
+    cursor: pointer;
+}
+
+.overlaywork6text {
     color: #2f2f2f;
     font-size: 20px;
     font-weight: 400;

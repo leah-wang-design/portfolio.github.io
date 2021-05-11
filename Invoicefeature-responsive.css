@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+.top {
+    background-image: linear-gradient(53deg, #DCE6FF, #f2fdff);
+}
+
 .topbanner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -141,9 +145,9 @@ li {
 #banner {
     /* grid-gap: 50px; */
     /* display: grid; */
-    margin-top: 60px !important;
-    background-color: #F4F6FF;
-    height: 600px;
+    /* margin-top: 60px !important; */
+    /* background-color: #F4F6FF; */
+    height: 830px;
     align-items: center;
     width: 100%;
     margin-left: 0 !important;

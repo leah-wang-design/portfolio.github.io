@@ -99,12 +99,13 @@ a:hover {
 }
 
 h4 {
-    font-family: "SF pro", Helvetica, Arial, serif;
-    color: #2f2f2f;
-    font-weight: 400;
+    font-family: "Poppins", Helvetica, Arial, serif;
+    color: #5a5a5a;
+    font-weight: 300;
     line-height: 1.5;
     text-align: left;
     margin: 0;
+    padding-top: 24px
 }
 
 .mousesection {
@@ -199,9 +200,9 @@ h4 {
 .work4container h4,
 .work5container h4,
 .work6container h4 {
-    font-family: "lato", Helvetica, Arial, serif;
-    color: #626262;
-    font-weight: 600;
+    font-family: "Poppins", Helvetica, Arial, serif;
+    color: #5a5a5a;
+    font-weight: 400;
     letter-spacing: .1rem;
     text-transform: uppercase;
     text-align: left;
@@ -237,7 +238,7 @@ h5 {
     font-family: "Roboto Mono", Helvetica, Arial, serif;
     color: #626262;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     /* padding-top: 2%; */
     text-align: left;
     padding-left: 3rem;
@@ -394,9 +395,9 @@ h5 {
 }
 
 .overlaywork1text {
-    color: #2f2f2f;
+    color: #464646;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     /* letter-spacing: .1rem; */
     position: absolute;
     top: 50%;
@@ -436,9 +437,9 @@ h5 {
 }
 
 .text {
-    color: #2f2f2f;
+    color: #464646;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     /* letter-spacing: .1rem; */
     position: absolute;
     top: 50%;
@@ -478,9 +479,9 @@ h5 {
 }
 
 .overlaywork3text {
-    color: #2f2f2f;
+    color: #464646;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     /* letter-spacing: .1rem; */
     position: absolute;
     top: 50%;
@@ -520,9 +521,9 @@ h5 {
 }
 
 .overlaywork4text {
-    color: #2f2f2f;
+    color: #464646;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     /* letter-spacing: .1rem; */
     position: absolute;
     top: 50%;
@@ -562,9 +563,9 @@ h5 {
 }
 
 .overlaywork5text {
-    color: #2f2f2f;
+    color: #464646;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     /* letter-spacing: .1rem; */
     position: absolute;
     top: 50%;
@@ -604,9 +605,9 @@ h5 {
 }
 
 .overlaywork6text {
-    color: #2f2f2f;
+    color: #464646;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     /* letter-spacing: .1rem; */
     position: absolute;
     top: 50%;

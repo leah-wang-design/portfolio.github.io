@@ -86,10 +86,11 @@ a:active {
 }
 
 .introductiontext h4 {
-    color: #2F2F2F;
-    font-family: 'Lato', sans-serif;
     font-size: 18px;
-    font-weight: 400;
+    font-family: "Poppins", Helvetica, Arial, serif;
+    color: #5a5a5a;
+    font-weight: 300;
+    line-height: 1.5;
     margin: 0px;
     text-align: left;
     line-height: 150%;

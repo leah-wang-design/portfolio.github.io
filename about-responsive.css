@@ -165,15 +165,16 @@ a:active {
 }
 
 .bottominfo h5 {
-    font-weight: 400;
-    padding: 0;
-    text-align: center;
-    color: #2F2F2F;
-    font-family: 'SF Pro', sans-serif!important;
-    font-weight: 400!important;
+    color: #5a5a5a;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif!important;
+    font-weight: 300!important;
     font-size: 12px!important;
     text-align: center;
     vertical-align: text-top;
+    padding: 0;
+    margin: 0px;
+    text-align: center;
 }
 
 .loader-wrapper {

@@ -26,7 +26,7 @@ body {
     color: #BBBBBB;
     text-align: right;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 14px;
     letter-spacing: .2em;
     word-spacing: 1.5em;
@@ -38,7 +38,7 @@ body {
 a:link,
 a:visited {
     text-decoration: none;
-    color: #BBBBBB;
+    color: #a8a8a8;
     padding: 0 0.3em 0 0.2em;
 }
 
@@ -218,17 +218,6 @@ h3 {
     text-align: left !important;
 }
 
-h4 {
-    color: #2F2F2F;
-    font-family: 'Nunito Sans', sans-serif !important;
-    font-size: 18px !important;
-    font-weight: 400 !important;
-    margin: 0px !important;
-    padding-top: 10px !important;
-    line-height: 150% !important;
-    text-align: left !important;
-}
-
 h5 {
     color: #2F2F2F;
     font-family: 'SF Pro', sans-serif!important;
@@ -360,7 +349,7 @@ h4 {
     color: #2F2F2F;
     font-family: 'Nunito Sans', sans-serif !important;
     font-size: 18px !important;
-    font-weight: 400 !important;
+    font-weight: 300 !important;
     margin: 0px !important;
     padding-top: 10px !important;
     line-height: 150% !important;
@@ -386,7 +375,7 @@ h4 {
     color: #BBBBBB;
     text-align: right;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 14px;
     letter-spacing: .2em;
     word-spacing: 1.5em;

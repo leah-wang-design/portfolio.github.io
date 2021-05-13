@@ -2,6 +2,68 @@ body {
     margin: 0;
 }
 
+.bodycolor {
+    color: #000;
+    background-image: linear-gradient( 260deg, #eef1ff, #ffffff);
+    transition: background-color 2s ease-in !important;
+}
+
+
+/* panel styles */
+
+@media screen and (min-width: 1024px) {
+    .panel {
+        /* min height incase content is higher than window height */
+        min-height: 100vh;
+    }
+    #panel3 {
+        /* min height incase content is higher than window height */
+        min-height: 30vh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .panel {
+        /* min height incase content is higher than window height */
+        min-height: 100vh;
+    }
+    #panel3 {
+        /* min height incase content is higher than window height */
+        min-height: 30vh;
+    }
+}
+
+
+/* colours */
+
+.color-violet {
+    background-image: linear-gradient( 310deg, #ffffff, #ffffff);
+}
+
+.color-indigo {
+    background-color: #ffffff;
+}
+
+.color-blue {
+    background-color: #eef3f8;
+}
+
+.color-green {
+    background-color: #d9e0d8;
+}
+
+.color-yellow {
+    background-color: #f7f6ee;
+}
+
+.color-orange {
+    background-color: #fff3e7;
+}
+
+.color-red {
+    background-color: #ffeeef;
+}
+
 .topbanner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -21,7 +83,7 @@ body {
     color: #BBBBBB;
     text-align: right;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 14px;
     letter-spacing: .2em;
     word-spacing: 1.5em;
@@ -33,7 +95,7 @@ body {
 a:link,
 a:visited {
     text-decoration: none;
-    color: #BBBBBB;
+    color: #7a7a7a;
     padding: 0 0.3em 0 0.2em;
 }
 
@@ -68,7 +130,7 @@ a:hover {
 
 .separator {
     width: 220px;
-    height: 1px;
+    height: 0.6px;
     margin-bottom: 20px;
     background-color: #2f2f2f;
 }
@@ -125,7 +187,7 @@ h4 {
 }
 
 .mousesection h5 {
-    color: #C4C4C4;
+    color: #929292;
     text-align: center;
     padding-bottom: 1em;
 }
@@ -136,7 +198,7 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
-    border: 1px solid #C4C4C4;
+    border: 1px solid #929292;
     -webkit-animation: intro 1s;
     animation: intro 1s;
 }

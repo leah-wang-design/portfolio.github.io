@@ -66,10 +66,10 @@ h2 {
     margin: 0px !important;
 }
 
-h3 {
+#introduction h3 {
     color: #2F2F2F;
     font-family: 'Lato', sans-serif !important;
-    font-size: 21px !important;
+    font-size: 21px;
     font-weight: 700 !important;
     margin: 0px !important;
     line-height: 36px !important;
@@ -79,7 +79,7 @@ h3 {
 
 #h5description {
     color: #6A6A6A;
-    text-align: left;
+    text-align: left !important;
 }
 
 h4 {
@@ -168,6 +168,7 @@ li {
     height: 830px;
     align-items: center;
     width: 100%;
+    padding-bottom: 5%;
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
@@ -181,11 +182,24 @@ li {
     display: block;
     max-width: 90%;
     padding-top: 10%;
+    padding-bottom: 5%;
     margin: auto;
 }
 
 #projecttitle h4 {
     margin-top: 24px !important;
+}
+
+#sidebar h3 {
+    color: #2f2f2f;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 18px !important;
+}
+
+#sidebar h4 {
+    color: #2f2f2f;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 16px !important;
 }
 
 #introduction {

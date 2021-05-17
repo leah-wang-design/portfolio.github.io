@@ -533,8 +533,8 @@
      display: inline-block;
      border-style: solid;
      border-width: 1px;
-     border-color: white;
-     background-color: white;
+     border-color: #2f2f2f;
+     background-color: #2f2f2f;
      vertical-align: middle;
  }
  
@@ -544,7 +544,7 @@
      color: #BBBBBB;
      top: 20%;
      z-index: 1;
-     Height: 170px;
+     Height: 190px;
      left: 88%;
      /* right:10px; */
  }
@@ -553,6 +553,7 @@
      list-style: none;
      color: #BBBBBB;
      line-height: 36px!important;
+     font-weight: 300 !important;
      font-family: 'Ubuntu', sans-serif;
      text-align: center;
      font-size: 14px !important;
@@ -564,6 +565,13 @@
  .btn {
      padding: 0 0.2em 0 0.2em !important;
  }
+ /* .navigatiorbar .hidebtn{
+    margin-left: 7%;
+    font-size: 14px;
+    color:#BBBBBB;
+    padding-top:200px;
+    padding-left:1em;
+} */
  
  ion-icon {
      color: #BBBBBB;
@@ -571,17 +579,17 @@
  
  .floatinglist a:hover {
      /* padding: 0 0.5em 0 0.5em; */
-     color: white;
-     background: #90A6F5;
+     color: #2f2f2f;
      border-radius: 5px;
      font-size: 15px;
+     font-weight: 400;
  }
  
  .active a {
      /* padding: 0 0.5em 0 0.5em; */
-     color: white;
-     background: #90A6F5;
+     color: #2f2f2f;
      border-radius: 5px;
+     font-weight: 400 !important;
  }
  /*this is for bottom navigation*/
  

@@ -69,8 +69,19 @@ h2 {
 #introduction h3 {
     color: #2F2F2F;
     font-family: 'Lato', sans-serif !important;
-    font-size: 21px;
+    font-size: 24px!important;
     font-weight: 700 !important;
+    margin: 0px !important;
+    line-height: 36px !important;
+    padding-top: 30px !important;
+    text-align: left !important;
+}
+
+h3 {
+    color: #2F2F2F;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 21px !important;
+    font-weight: 500;
     margin: 0px !important;
     line-height: 36px !important;
     padding-top: 30px !important;

@@ -379,6 +379,20 @@ ion-icon {
     margin-bottom: 36px;
 }
 
+@media screen and (min-width: 1024px) {
+    #fullimg {
+        max-width: 170%;
+        margin-left: -35%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #fullimg {
+        max-width: 128%;
+        margin-left: -14%;
+    }
+}
+
 .mainprocess #wideimg {
     max-width: 120%;
     align-content: center;
@@ -388,9 +402,7 @@ ion-icon {
 }
 
 .mainprocess #fullimg {
-    max-width: 170%;
     align-content: center;
-    margin-left: -35%;
     padding-top: 36px;
     padding-bottom: 36px;
 }

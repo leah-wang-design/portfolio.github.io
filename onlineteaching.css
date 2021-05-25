@@ -323,6 +323,11 @@ li {
     }
 }
 
+.highlight {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #FFF4D8 65%);
+    display: inline;
+}
+
 .animation h1 {
     color: white;
     font-family: 'SF Pro', sans-serif;

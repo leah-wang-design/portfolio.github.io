@@ -63,20 +63,20 @@
             <h3>Background</h3>
         </div>
         <div class="content">
-            <h4><b>.Local</b> is an event-discovery app that helps users discover and share about places and local events via posts and maps. <br><br>I created the app from concept to high-fidelity prototype through conducting user research, sketches, and
-                rounds of design iterations. I also conducted many rounds of user testing and altered design based on feedback to improve the app's learnability and usability.</h4>
+            <h4><b>.Local</b> is an event-discovery app that helps users discover and share about places and local events via posts and maps. <br><br>I created the app from concept to high-fidelity prototype through conducting user research, information architecture,
+                and design iterations. I also conducted many rounds of user testing and altered design based on feedback to improve the app's learnability and usability.</h4>
         </div>
         <div class="Problem">
             <h3>Problem</h3>
         </div>
         <div class="hmw">
-            <h4>How might we help users discover and share about local events and places easily and quickly?</h4>
+            <h4>The typical process for users to find somewhere or something fun is very time-consuming and laborious.<br><br><span class="highlight"><b> How might we help users discover and share about local events and places easily and quickly?</b></span></h4>
         </div>
         <div class="Challenge">
             <h3>My Challenge</h3>
         </div>
         <div class="mychallenge">
-            <h4>'.Local' integrates post, reviews, search, popular tags, and maps to allow users to explore trending events and places in different ways. To help users with different intentions to enjoy using the app and find what they need easily, organizing
+            <h4><b>.Local</b> integrates post, reviews, search, popular tags, and maps to allow users to explore trending events and places in different ways. To help users with different intentions to enjoy using the app and find what they need easily, organizing
                 different types of content in ways that make the app universally easy to understand and navigate became the biggest challenge.</h4>
         </div>
     </div>
@@ -182,24 +182,24 @@
     <div class="mainprocess">
         <div id="research">
             <li>Empathize</li>
-            <h4>Do you find it challenging to find something fun to do without spending hours Googling and browsing websites? You are not the only one who feels this way - searching for trending events often requires users to use many different online sources
-                such as Google, Eventbrite, Facebook Event, Instagram, etc. Besides, users need to use map apps, ticket apps, time and dates, etc., for checking details of the events or places. This process is time-consuming, laborious, and it can be
-                very frustrating for many people.
+            <h4>Do you find it challenging to find something fun to do without spending hours Googling and browsing websites? You are not the only one who feels this way - through research, I found many users found this process time-consuming and laborious,
+                and it can be very frustrating to find something fun quickly.
             </h4>
-            <li class="subtitle">Research on existing event discovery apps</li>
-            <h4> In order to get a better understanding of the current event discovery apps, I looked into some of the researches and studies of the current industry, including <a href="http://www.hughmalkin.com/blogwriter/2015/9/23/why-no-one-has-solved-event-discovery">Hugh Malkin's study and learning from Hugecity</a>.
-                <br><br> I learned 1) There are many ways for the back-end developers to collect event data through APIs and web scraping techniques, so the app doesn't necessarily rely on event organizers;
-                <br> 2) There are two types of typical users I need to consider in the design process: users who like to plan and people looking for things they can do right away.
+            <li class="subtitle" id="topsubtitle">Research on existing event discovery apps</li>
+            <h4>To better understand the current event discovery apps, I looked into some of the research and studies of the current industry, including<a href="http://www.hughmalkin.com/blogwriter/2015/9/23/why-no-one-has-solved-event-discovery">Hugh Malkin's study and learning from Hugecity</a>.
+                I learned:<br><br> 1) There are many ways for the back-end developers to collect event data through APIs and web scraping techniques, so the app doesn't necessarily rely on event organizers;
+                <br><br> 2) There are two types of typical users I need to consider in the design process: users who like to plan and people looking for things they can do right away.
             </h4>
             <br>
-            <h4>I also conducted competitive studies on the most used app related to fun-discovery, including Google Map, Facebook Event, Facebook Local, Yelp, Eventbrite, Snap Map. Among all the apps mentioned, Facebook events and Facebook local are the
-                most ideal ones to use when users are not looking for anything specific but fun stuff they can do to get out of their houses. (Note: Facebook Local app was no longer available since Jan 2021 after this research was conducted)</h4>
+            <h4>I also conducted competitive studies on the most used app related to event discovery, including Google Map, Facebook Event, Facebook Local, Yelp, Eventbrite, Snap Map.</h4>
             <img src="local-discovery-app/Diagram/02-Competitive-Study.png" alt="competitivestudy" data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in-back">
+            <h5>Competitive Analysis <a href="local-discovery-app/Diagram/02-Competitive-Study.png"> (click to enlarge) </a></h5>
             <br>
             <br>
-            <h5>Competitive Analysis <a href="https://drive.google.com/file/d/1cyPSGKxbyeuBbbYiAxjrqOx1G3hS7y7g/view?usp=sharing"> (click to see heuristic analysis for the apps) </a></h5>
+            <h4><span class="highlight">Among all the apps mentioned, Facebook events and Facebook local are ideal for users when they are not looking for anything specific but to get out of their houses. However, they lack some basic features like map, search by categories, and comment function for users to see the reviews of the events. </span>                (Note: Facebook Local app was no longer available since Jan 2021 after this research was conducted)</h4>
+
             <li class="subtitle">User Research and Interviews</li>
-            <h4>In order to better understand the users' pain points and validate the idea, I designed questionnaires to 1) find target audiences to conduct interviews; 2) understand the challenges people have while looking for fun events and places.<br><br><b></h4>
+            <h4>I also sent out questionnaires to find target audiences to conduct interviews and understand people's pain points while looking for fun events and places.<br><br><b></h4>
                 <h4 id="h4title">Target Audience:</b></h4>
             <div id="sidebarsection">
 
@@ -209,34 +209,42 @@
                 <li id="h4list">People who are comfortable with social media and mobile apps.</li>
             </div>
             <br>
-            <h4>Based on the 26 responses I received from people aged between 23-35, I found 46.2% of them are <b>proactively looking for fun things to do or places to go</b>, while 42.3% of them <b>having trouble finding the types of events they are
-                interested in</b> and 23.1% of people are <b>not satisfied with the existing websites and apps.</b></h4>
+            <h4>Based on the 26 responses I received from people aged between 23-35, I found there are 46.2% of them proactively looking for things to do or places to go, while 42.3% of them having trouble finding the types of events they are interested in
+                and 23.1% of people are not satisfied with the existing websites and apps.</h4>
             <img src="local-discovery-app/Diagram/03-SurveyQ-3.png" alt="survey1" data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in-back">
             <h5>Partial Survey Results</h5>
             <br>
             <br>
-            <h4>With the information I gathered through the survey, I got in touch with five people who are in my target group and conducted in-person and online interviews with them. Empathy mapping helped me realized what user think, say, do and feel can
-                be different. I observed the user’s behavior during user interview to collect data which enabled me to think from the users’ perspective.</h4>
-            <img src="local-discovery-app/Diagram/04-Interview.png" data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in-back">
-            <h5>Interview Insights <a href="https://drive.google.com/drive/folders/173zl5TcVRaZ3pAUnFQZOzL02DEvYgCTL?usp=sharing"> (click to see the empathy mapping) </a></h5>
+            <h4>With the information I gathered through the survey, I got in touch with five people in my target group and conducted in-person and online interviews to understand the deep reasons behind the answers.</h4>
+            <img id="fullimg" src="local-discovery-app/Diagram/04-Interview.png" data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in-back">
+            <h5>Important Quotes from the interviews<a href="https://drive.google.com/drive/folders/173zl5TcVRaZ3pAUnFQZOzL02DEvYgCTL?usp=sharing"> (click to see the empathy mapping) </a></h5>
+            <br>
+            <br>
+            <h4>By synthesizing the research, I identified the most common pain points for the users:<br><br>
+                <div id="sidebarsection">
+                    <li id="h4list">The users want to see the reviews of the events before they decide to go there.</li>
+                    <li id="h4list">It's currently time-consuming to track the updates of different events on multiple apps.</li>
+                    <li id="h4list">It's challenging to find friends to go to the events together. </li>
+                </div>
+            </h4>
         </div>
 
         <div id="Defineproblem">
             <li>Define the Problem</li>
             <h4>By synthesizing the information I collected through research and interviews, I defined an actionable problem statement based on a deep understanding of the user’s specific needs.</h4>
-            <li class="subtitle">Persona and User Journey</li>
+            <li class="subtitle" id="topsubtitle">Persona and User Journey</li>
             <h4>I concluded my target users into two types of personas: Explorer Charlie and Follower Elizabeth. While Charlie is extrovert, adventurous, and social media-active, Elizabeth is introverted and cautious about her decision-making.
             </h4>
             <div class="row">
                 <div>
                     <div class="persona">
-                        <img src="local-discovery-app/Diagram/06-Persona-1-v2.png" alt="persona1">
+                        <img id="whiteimg" src="local-discovery-app/Diagram/06-Persona-1-v2.png" alt="persona1">
                     </div>
                 </div>
                 <h5>Persona 1: Explorer Charlie</h5>
                 <div>
                     <div class="persona">
-                        <img src="local-discovery-app/Diagram/06-Persona-2-v2.png" alt="persona2">
+                        <img id="whiteimg" src="local-discovery-app/Diagram/06-Persona-2-v2.png" alt="persona2">
                     </div>
                 </div>
                 <h5>Persona 2: Follower Elizabeth</h5>
@@ -246,7 +254,7 @@
             <br>
             <h4>With a general direction in mind (a fun-discovery app) and well-defined target users, I mapped out user journeys to help me with identifying design and innovation opportunities. I realized the opportunities of intervention occur primarily
                 in the stages of 'searching for events' and 'sifting through events', where my interventions can help users quickly find different types of events with reliable reviews.</h4>
-            <img src="local-discovery-app/Diagram/07-Userjourney.png" alt="UserJourney" data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in-back">
+            <img id="wideimg" src="local-discovery-app/Diagram/07-Userjourney.png" alt="UserJourney" data-aos="fade-zoom-in" data-aos-duration="800" data-aos-easing="ease-in-back">
             <h5>User Journey for Elizabeth<a href="local-discovery-app/Diagram/07-Userjourney.png">(click to enlarge)</a></h5>
             <br>
             <br>
@@ -331,12 +339,12 @@
             <br>
             <li class="subtitle">Wireframes and User Testing</li>
             <h4>
-                With the improved user flows and interface sketches, I started to create wireframes and see how things look with better-defined spaces. The wireframes looked similar to the sketches at the beginning but started to vary as I keep coming up with better
-                ways to organize the content for users to understand. </h4>
+                With the improved user flows and interface sketches, I started creating wireframes and seeing how things look with better-defined spaces. The wireframes looked similar to the sketches initially but began to vary as I keep coming up with better ways to
+                organize the content for users to understand. </h4>
             <li class="subsubtitle">1- Wireframes Iteration1: Optimize 'Map and List' user flow</li>
 
-            <h4>I created multiple versions of wireframes for the 'Map and List' page and was able to narrow down the options to the final three of them. This time, I decided to use Maze to conduct unmoderated user testing to see if how users are interacting
-                with the prototype and help me decide the version to choose.</h4>
+            <h4>I created multiple versions of wireframes for the 'Map and List' page and narrowed down the options to the final three of them. I also used Maze to conduct unmoderated user testing to see how users interact with the prototype and help me decide
+                the version to choose.</h4>
             <div id="mapfeaturetesting">
                 <div>
                     <img src="local-discovery-app/Diagram/14_Wireframe-mapfeature-version1.jpg" alt="wireframemapv1" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-back">
@@ -361,8 +369,8 @@
             <br>
             <li class="subsubtitle">2- Wireframes Iteration2: Clean up the interfaces</li>
 
-            <h4>Once there were no big flaws in the wireframes, I created a prototype that has the major user flows I wanted to cover in the app, and sent a link to users to get some quick feedback. The feedback I got in this round focuses more on the detail
-                side of the interfaces. Some said the icons were too small, some said the space is too tight.
+            <h4>Once there were no significant flaws in the wireframes, I created a prototype with the major user flows I wanted to cover in the app and sent a link to users to get some quick feedback. The feedback I got in this round focuses more on the
+                detail side of the interfaces. Some said the icons were too small, and some said the space is too tight.
             </h4>
 
             <img src="local-discovery-app/Diagram/14_Wireframe-version1-picked.jpg" alt="14_Wireframes" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-back">
@@ -370,9 +378,9 @@
         </div>
         <div id="High-fidelity">
             <li>High-fidelity and testing</li>
-            <h4>Finally, with all the 'final' wireframes I created, I moved onto high-fidelity design phase. I made sure to check Material Design and the IOS guideline for size, color, and accessibility, etc. </h4>
+            <h4>Finally, after revising the wirframes based on the feedback, I moved onto high-fidelity design phase. I made sure to check Material Design and the IOS guideline for size, color, and accessibility, etc. </h4>
             <li class="subtitle">Style Guide</li>
-            <img src="local-discovery-app/Diagram/15_Style-Guide.jpg" alt="15_StyleGuide" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-back">
+            <img id="whiteimg" src="local-discovery-app/Diagram/15_Style-Guide.jpg" alt="15_StyleGuide" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-back">
             <h5>Style Guide<a href="local-discovery-app/Diagram/15_Style-Guide.jpg">(click to enlarge)</a></h5>
 
             <li class="subtitle">High-fidelity Version 1</li>
@@ -398,17 +406,17 @@
             <div id="fullwidthsection">
 
                 <img src="local-discovery-app/Diagram/18_High-fidelity-final-all-mockup-new-small.png" alt="18_High-fidelity" id="fullwidthimg">
-
+                <br><br>
+                <h5>Final high-fidelity design<a href="local-discovery-app/Diagram/18_High-fidelity-final-all-mockup-new-small.png">(click to enlarge)</a></h5>
             </div>
         </div>
         <div id="whatIlearned">
             <li>What I learned</li>
-            <h4><b>Generative research and ideation for fun-discovery:</b> <br><br>I gathered insights through primary and secondary research to establish the target audience and the goal of the app. I also conducted information architecture for the app and
-                created multiple iterations of design based on feedback received during user testing. <br><br><br>
-                <b>Problem solving through multiple rounds of interviews and user testings: </b> <br><br>The app allows users to discover fun events and places in various ways, and it's easy to be confusing if it's not designed intuitively. I conducted
-                multiple rounds of interviews and user testings throughout the entire design process to get insights from users' behaviors, needs, and opinions.<br><br><br>
-                <b>High-fidelity interface design and prototyping</b>: <br><br>I designed the high-fidelity UI and made sure the design is both visual and functional consistant. I also made the prototype with Invision to allow users to interact with the
-                design during the user testings.
+            <h4><b>Early testing is crucial for success:</b> <br><br>Considering the complexity of each way the app provides to explore new events and places, it was essential to make sure the design is easy to understand for the users. Conducting user testing
+                in the early stage allows me to learn quickly about what doesn't work and helped me avoid wasting time on making a complicated design that's hard to understand. <br><br><br>
+
+                <b>Devices matter when it comes to user testing:</b> <br><br>I conducted the user testing through Maze for multiple rounds and realized that sometimes the results and feedback could vary depending on the device users were using during
+                the task. If I work on the project again, I would specifically require the users to use their phones for the testing starting from the beginning of the project.
             </h4>
 
             <div>

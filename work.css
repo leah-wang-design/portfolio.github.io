@@ -344,7 +344,7 @@ h5 {
 .work2container {
     position: relative;
     border-radius: 3px;
-    background-image: linear-gradient(53deg, #DCE6FF, #E1F3F6);
+    background-image: linear-gradient(53deg, #e0e8f7, #EEF4FF);
     cursor: pointer;
 }
 
@@ -352,10 +352,7 @@ h5 {
     display: block;
     max-width: 75%;
     margin: auto;
-    /* max-height: fit-content; */
-    /* margin-left: 5%; */
-    /* margin-right: 5%; */
-    padding-top: 10%;
+    padding-top: 0%;
 }
 
 .work3container {
@@ -378,14 +375,14 @@ h5 {
     border-radius: 3px;
     /* background-color: #EFF1FF; */
     cursor: pointer;
-    background-image: linear-gradient( 53deg, #F1ECFF, #EEF4FF);
+    background-image: linear-gradient(53deg, #DCE6FF, #E1F3F6);
 }
 
 .work4container img {
     display: block;
-    max-width: 65%;
+    max-width: 75%;
     margin: auto;
-    padding-top: 4%;
+    padding-top: 10%;
 }
 
 .work5container {
@@ -409,7 +406,7 @@ h5 {
     border-radius: 3px;
     grid-column: 2/2;
     grid-row: 3/4;
-    background-image: linear-gradient(53deg, #EEF4FF, #EEF4FF);
+    background-image: linear-gradient( 53deg, #F1ECFF, #EEF4FF);
     cursor: pointer;
 }
 
@@ -417,7 +414,7 @@ h5 {
     display: block;
     max-width: 65%;
     margin: auto;
-    padding-top: 0%;
+    padding-top: 4%;
 }
 
 .overlaywork1 {
@@ -549,15 +546,15 @@ h5 {
     text-align: left;
 }
 
-.work4container:hover .overlaywork4 {
+.work6container:hover .overlaywork6 {
     opacity: 0.98;
 }
 
-.work4container:hover {
+.work6container:hover {
     cursor: pointer;
 }
 
-.overlaywork4 {
+.overlaywork6 {
     font-family: "Poppins", Helvetica, Arial, serif;
     position: absolute;
     top: 0;
@@ -578,7 +575,7 @@ h5 {
     transition: opacity .4s, transform .4s;
 }
 
-.overlaywork4text {
+.overlaywork6text {
     color: #464646;
     font-size: 18px;
     font-weight: 300;
@@ -635,15 +632,15 @@ h5 {
     text-align: left;
 }
 
-.work6container:hover .overlaywork6 {
+.work4container:hover .overlaywork4 {
     opacity: 0.98;
 }
 
-.work6container:hover {
+.work4container:hover {
     cursor: pointer;
 }
 
-.overlaywork6 {
+.overlaywork4 {
     font-family: "Poppins", Helvetica, Arial, serif;
     position: absolute;
     top: 0;
@@ -664,7 +661,7 @@ h5 {
     transition: opacity .4s, transform .4s;
 }
 
-.overlaywork6text {
+.overlaywork4text {
     color: #464646;
     font-size: 18px;
     font-weight: 300;

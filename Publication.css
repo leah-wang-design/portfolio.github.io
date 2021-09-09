@@ -57,12 +57,12 @@ a:visited {
 .introduction {
     /* display: grid;
     grid-template-columns: 1fr 3fr; */
-    width: 64%;
+    width: 60%;
     height: 100px;
     /* background: #FAF9F8; */
-    text-align: left;
-    padding-left: 18%;
-    margin-top: 3%;
+    text-align: center;
+    margin: auto;
+    padding-top: 3%;
 }
 
 .introduction h3 {
@@ -81,11 +81,12 @@ a:active {
 
 h2 {
     color: #424040;
-    font-family: 'Nunito Sans', sans-serif !important;
+    font-family: 'Helvetica', sans-serif !important;
     font-size: 24px !important;
     font-weight: 600 !important;
     margin: 0px !important;
-    padding-top: 12px !important;
+    padding-top: 20px;
+    padding-bottom: 4px;
     text-align: left !important;
     padding-left: 4px;
 }
@@ -93,46 +94,76 @@ h2 {
 h4 {
     font-size: 18px;
     font-family: "Poppins", Helvetica, Arial, serif;
-    color: #5a5a5a;
-    font-weight: 500;
+    color: #2f2f2f;
+    font-weight: 300;
     line-height: 1.5;
     margin: 0px;
-    text-align: left;
     line-height: 150%;
+}
+
+.description {
+    position: relative;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 80px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
 }
 
 .description h4 {
     color: #a8a8a8;
     font-family: 'SF Pro', sans-serif!important;
-    font-weight: 400!important;
+    font-weight: 400;
     font-size: 16px!important;
-    text-align: left !important;
+    text-align: left;
     vertical-align: text-top;
     margin: 0;
     padding-left: 4px;
 }
 
+h4#buttontext {
+    color: white;
+    background: #2f2f2f;
+    padding: 10px 14px 10px 14px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    /* margin: 12px 0 0 0; */
+    border-radius: 5px;
+}
+
+h4#comingson {
+    color: white;
+    background: #c0c0c0;
+    padding: 10px 14px 10px 14px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    /* margin: 12px 0 0 0; */
+    border-radius: 5px;
+    margin-top: 16px;
+}
+
+#ReadCTA:hover #buttontext {
+    color: black;
+    background: #f3f3f3;
+    font-weight: 400;
+    transition: opacity .8s, transform .8s ease-out;
+}
+
 .firstproject {
     cursor: pointer;
     position: relative;
-    border-radius: 3px;
-    width: 70%;
+    width: 60%;
     margin: auto;
-    height: 500px;
+    height: 300px;
     overflow: hidden;
 }
 
 .firstproject a {
     padding: 0;
     margin: 0;
-}
-
-.description {
-    position: relative;
-    width: 70%;
-    margin-left: 15%;
-    height: 500px;
-    border-radius: 5px;
 }
 
 .firstproject img {
@@ -156,17 +187,17 @@ h4 {
     cursor: pointer;
     /* box-shadow: 0 12px 65px 2px rgb(41 99 255 / 0%), 0 1px 2px 1px rgb(41 99 255 / 0%); */
     box-shadow: 0 6px 30px 2px rgba(41, 99, 255, 0.12), 0 1px 2px 1px rgba(41, 99, 255, 0.05);
-    transition: box-shadow .4s ease-in;
-    -moz-transition: box-shadow .4s ease-in;
-    -webkit-transition: box-shadow .4s ease-in;
-    transition: opacity .4s, transform .4s;
+    transition: box-shadow .8s ease-in;
+    -moz-transition: box-shadow .8s ease-in;
+    -webkit-transition: box-shadow .8s ease-in;
+    transition: opacity .8s, transform .8s;
 }
 
 .firstproject:hover {
     box-shadow: 0 10px 30px 8px rgba(41, 99, 255, 0.12), 0 1px 2px 1px rgba(41, 99, 255, 0.05);
     transition: box-shadow .6s ease-in;
-    -moz-transition: box-shadow .4s ease-in;
-    -webkit-transition: box-shadow .4s ease-in;
+    -moz-transition: box-shadow .8s ease-in;
+    -webkit-transition: box-shadow .8s ease-in;
     transform: scaleX(1.006) scaleY(1.006);
 }
 
@@ -184,6 +215,7 @@ h4 {
 
 .firstproject:hover img {
     transform: scaleX(1.05) scaleY(1.05);
+    transition: opacity .8s, transform .8s;
 }
 
 .firstproject:hover #BGcolor {

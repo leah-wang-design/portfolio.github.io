@@ -1,31 +1,4 @@
 $(document).ready(function() {
-    $("#linkedinpng").hover(
-        function() { $(this).attr("src", "linkedin-in-brands-hover.svg"); },
-        function() {
-            $(this).attr("src", "linkedin-in-brands.svg");
-        });
-    $("#emailpng").hover(
-        function() { $(this).attr("src", "envelope-regular-hover.svg"); },
-        function() {
-            $(this).attr("src", "envelope-regular.svg");
-        });
-    $("#githubpng").hover(
-        function() { $(this).attr("src", "github-hover.svg"); },
-        function() {
-            $(this).attr("src", "github-01.svg");
-        });
-    $("#mediumpng").hover(
-        function() { $(this).attr("src", "medium-hover.svg"); },
-        function() {
-            $(this).attr("src", "medium.svg");
-        })
-});
-
-$(window).on("load", function() {
-    $(".loader-wrapper").fadeOut("slow");
-});
-
-$(document).ready(function() {
     AOS.init();
 
     // You can also pass an optional settings object
@@ -52,4 +25,34 @@ $(document).ready(function() {
         anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
     });
+
 })
+$()
+
+
+
+$(window).on("load", function() {
+    $(".loader-wrapper").fadeOut("slow");
+});
+$(document).ready(function() {
+    $("#linkedinpng").hover(
+        function() { $(this).attr("src", "linkedin-in-brands-hover.svg"); },
+        function() {
+            $(this).attr("src", "linkedin-in-brands.svg");
+        });
+    $("#emailpng").hover(
+        function() { $(this).attr("src", "envelope-regular-hover.svg"); },
+        function() {
+            $(this).attr("src", "envelope-regular.svg");
+        });
+    $("#githubpng").hover(
+        function() { $(this).attr("src", "github-hover.svg"); },
+        function() {
+            $(this).attr("src", "github-01.svg");
+        });
+    $("#mediumpng").hover(
+        function() { $(this).attr("src", "medium-hover.svg"); },
+        function() {
+            $(this).attr("src", "medium.svg");
+        })
+});

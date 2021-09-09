@@ -42,7 +42,13 @@ $(document).ready(function() {
         function() { $(this).attr("src", "github-hover.svg"); },
         function() { $(this).attr("src", "github-01.svg"); }
     )
+    $("#mediumpng").hover(
+        function() { $(this).attr("src", "medium-hover.svg"); },
+        function() {
+            $(this).attr("src", "medium.svg");
+        })
 });
+
 
 
 $(document).ready(function() {

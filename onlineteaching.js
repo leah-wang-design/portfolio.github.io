@@ -11,9 +11,16 @@ $(document).ready(function() {
         });
     $("#githubpng").hover(
         function() { $(this).attr("src", "github-hover.svg"); },
-        function() { $(this).attr("src", "github-01.svg"); }
-    )
+        function() {
+            $(this).attr("src", "github-01.svg");
+        })
+    $("#mediumpng").hover(
+        function() { $(this).attr("src", "medium-hover.svg"); },
+        function() {
+            $(this).attr("src", "medium.svg");
+        })
 });
+
 $(window).on("load", function() {
     $(".loader-wrapper").fadeOut("slow");
 });
